@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&display=swap');
+/*
+font-family: 'Poltawski Nowy', serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+/* all pages NavHeader */
+.headerNavGeneral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+.headerNavGeneral img{
+    border-radius: 100%;
+    border: 5px solid;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-color: white;
+}
+.ulHeaderGeneral{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.botoneraHeader {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    display: inline;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transform: all 0.8s ease;
+    border-radius: 100px;
+}
+.btn a{
+    text-decoration: none;
+    font-family: 'Poltawski Nowy', serif;
+    font-size: medium;
+    color: white;
+}
+/* Boton 2 */
+.btn-2{
+    transition: all 0.8s;
+    border: 3px solid;
+    border-color: white;
+}
+.btn-2:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+.btn-2:hover a{
+    font-weight: bolder;
+}
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -10px;
+    background-color: #fff;
+}
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+.btn-2:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+}
+.btn-2:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+}
+
+/* Boton 1 */
+.btn-1{
+    transition: all 0.8s;
+    /* border: 3px solid; */
+    /* border-color: white; */
+}
+.btn-1:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px var(--color);
+    border-color: white;
+}
+.btn-1:hover a{
+    font-weight: bolder;
+}
+.btn-1 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+.btn-1 span:nth-child(1){
+    right: -10px;
+    top: 10%;
+    background-color: #ffffff;
+}
+.btn-1 span:nth-child(2){
+    left: -10px;
+    bottom: 10%;
+    background-color: rgb(146, 145, 145);
+}
+.btn-1:hover span:nth-child(1){
+    top: 100%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: rgb(146, 145, 145);
+}
+.btn-1:hover span:nth-child(2){
+    bottom: 100%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: white;
+}
+/*end of all pages NavHeader */
+
+/* Start of all footers design */
+.h3Footer{ 
+    text-decoration: underline;
+    font-family: 'Poltawski Nowy',serif;
+    font-size: large;
+    padding: 10px;
+}
+.footerDiv{
+    text-align: center;
+    color: white
+}
+.h3SubDiv{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.h3SubDiv a{
+    padding: 5px 10px;
+    border-radius: 100px;
+    border-width: 5px;
+    border-style: inset groove;
+    margin: 10px;
+}
+/* end of all footers design */
+
+/*Start of index Page modifications*/
+.bodyIndex{
+    background : url(../images/Backgrounds/indexBackgroundImg.svg);
+    background-size: cover;
+    padding: 0px 30px;
+}
+.mainS1 {
+    color: white;
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    '.. h1Index h1Index ..'
+    'h2Index  h2Index  .. ..'
+    'h3Index h4Index h4Index h4Index'
+    'h3Index h4Index h4Index h4Index'
+    ;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.sec1__DivIndex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.h1Index{
+    grid-area: h1Index;
+    align-items: center;
+}
+.h1Index h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    border-color: black;
+    background-color: #820bd7;
+    border-radius: 20px;
+    border-style: groove;
+}
+.h2Index{
+    grid-area: h2Index;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+}
+.h2Index h2{
+    text-decoration: underline;
+    font-size: 40px;
+}
+.h3Index{
+    grid-area: h3Index;
+}
+.h3Index img{
+    margin-right: 10px;
+    width: 400px;
+    height: 300px;
+}
+.h4Index{
+    grid-area: h4Index;
+}
+.h4Index p{font-size: xx-large;}
+.mainS2{
+    display:inline-block;
+    padding: 20px;
+}
+.mainS2 h2{
+    text-decoration: underline;
+    font-size: xx-large;
+}
+.mainS2 div{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.mainS2 p{font-size: 27px;}
+.indexImg2{
+    margin-left: 10px;
+    height: 300px;
+    width: 300px;
+}
+.mainS3{
+    padding-bottom: 10px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+.mainS3 img{width: 800px;}
+.mainS3 h2{
+    padding: 10px;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+.mainS3 p{
+    font-size: xx-large;
+}
+/* subtitle, Subtitle and paragraphs fonts*/
+.h1Index, .h2Index, .mainS2 h2, .mainS3 h2{
+    color: white;
+    font-family: 'Poltawski Nowy',serif;
+    text-align: center;
+}
+.h4Index p , .mainS2 p, .mainS3 p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    text-align: justify;
+}
+/* images border style */
+.h3Index img, .indexImg2, .mainS3 img{
+    object-fit: cover;
+    border-radius: 100px;
+    border-style: inset outset;
+    border-color: #9107f4;
+    border-width: 15px;
+}
+.footerDiv h3{ color: white;}
+.footerDiv a{ border-color: rgb(228, 3, 232);}
+.h3SubDiv svg{
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+/*End of index Page modifications*/
+
+/* start of SixDegrees page modification */
+.bodySD{
+    background: url(../images/Backgrounds/sixdegreesBackgroundImg.svg);
+    background-size: cover;
+}
+/* start of section 1 main body SDpage */
+.sec1SD{
+    color: white;
+    padding: 20px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+    'areaT areaT areaT2 areaT2 areaT2'
+    'areaImg areaImg areaP areaP areaP'
+    'areaImg areaImg areaP areaP areaP'
+    'areaCN areaCN areaP areaP areaP';
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+}
+.sec1__DivSD{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.h1SD{
+    grid-area: areaT;
+}
+.h1SD h1{
+    font-size: xx-large;
+    padding: 0px 20px;
+    background-color: #0a97c6;
+}
+.h2SD{
+    grid-area: areaImg;
+    padding: 15px 0px;
+}
+.h2SD img{
+    width: 300px;
+    height: 400px;
+    border-radius: 100px;
+}
+.h3SD{
+    grid-area: areaCN;
+    text-align: center;
+}
+.h3SD h2{
+    font-size: xx-large;
+    border-width: 10px;
+}
+.h4SD{
+    grid-area: areaT2;
+    align-items: end;
+    text-align: center;
+}
+.h4SD h2{
+    font-size: 50px; 
+    padding: 20px;
+}
+.h5SD{
+    grid-area: areaP;
+}
+.h5SD p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 0px 20px;
+    text-align: justify;
+    font-size: xx-large;
+    background-color: #0a97c6; 
+    border-radius: 25px;
+    border-style: groove;
+
+}
+/* end of section 1 main body SDpage */
+/* start of section 2 main body SDpage */
+.sec2SD{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,400px);
+    grid-template-areas: 
+    'img1 img2 img3'
+    ;
+    padding: 10px 20px;
+    justify-items: center;
+    align-items: center;
+}
+.sec2__Div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2; 
+    width: 400px;
+    height: 400px;
+}
+.img3{
+    grid-area: img3;
+    height: 300px;
+ }
+.sec2__Div img{
+    border-radius: 50px;
+    border-width: 10px;
+}
+/* end of section 2 main body SDpage */
+/* start of section 3 main body SDpage */
+.sec3SD{
+    margin: 20px;
+    display: inline;
+    color: white;
+}
+.sec3Div1SD{
+    display: inline;
+}
+.sec3Div1SD h2{
+    padding-bottom: 5px;
+    text-align: center
+}
+.sec3Div1SD p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
+    font-size: xx-large;
+    padding: 10px;
+    margin-top: 10px;
+    transform: scale(.95);
+    background-color: #0a97c6; 
+    border-radius: 25px;
+    border-style: groove
+}
+.sec3Div2SD{
+    margin: 10px;
+    text-align: center;
+}
+.sec3Div2SD iframe{
+    width: 800px;
+    height: 400px;
+    border-radius: 50px;
+}
+/* subtitle, Subtitle and paragraphs fonts*/
+.h1SD h1, .h3SD h2, .h4SD h2, .sec3Div1SD h2{
+    font-family: 'Poltawski Nowy',serif;
+    text-align: center;
+} 
+.sec3Div1SD h2, .h4SD h2{
+    font-size: xx-large; 
+    text-decoration: double underline;
+    text-decoration-color: lightblue;
+}
+.h1SD h1 , .h3SD h2 , .h4SD h2{
+    border-radius: 50px;
+    border-style: inset ridge;
+    border-width: 10px;
+    border-color: #05aee7;
+}
+/* images border style */
+.h2SD img, .img1 img, .img2 img, .img3 img, .sec3Div2SD iframe{
+    border-style: inset ridge;
+    border-width: 10px;
+    border-color: #0a97c6;
+    object-fit: cover;
+}
+
+.footerDivSD h3{ color: white; text-align: center;font-size: x-large;}
+.footerDivSD svg{ color: rgb(207, 213, 252);}
+.footerDivSD a{
+    border-color: rgb(3, 152, 232);
+    margin: 10px;
+}
+/* end of section 3 main body SDpage */
+
+/* End of SixDegrees page modification */
+
+/* Start of Facebook Page modifications */
+.bodyFB{
+    background: url(../images/Backgrounds/facebookBackgroundImg.svg);
+    background-size: cover;
+    color:white;
+    margin: 20px;
+}
+.footerDivFB{
+    text-align: center;
+    color: white;
+}
+.footerDivFB svg{
+    color: white;
+}
+.footerDivFB a{ 
+    border-color: rgb(114, 124, 250); 
+    margin: 10px;
+}
+
+/* start of sec1 of main body facebook Page */
+.sec1FB{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 100px 100px 200px 200px 200px;
+    grid-template-areas: 
+    '.. title title title title title ..'
+    'subtitle subtitle subtitle subtitle .. .. ..'
+    'paragraph paragraph paragraph paragraph paragraph paragraph paragraph'
+    '.. img1 img2 img3 img4 img5 ..'
+    '.. img1 img2 img3 img4 img5 ..'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+}
+.sec1FB__Div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.h1FB{
+    grid-area: title;
+    justify-content: center;
+}
+.h1FB h1{
+    font-size: 50px;
+    background-color: #7d8bf7;
+    padding: 5px;
+    border-radius: 50px;
+}
+.h2FB{
+    grid-area: subtitle;
+    align-items: end;
+    font-size: xx-large;
+    text-decoration: underline solid;
+}
+.h3FB{
+    grid-area: paragraph;
+}
+.h3FB p{
+    font-size: xx-large;
+}
+.h4FB, .h5FB, .h6FB, .h7FB, .h8FB{
+    display: inline;
+    text-align: center;
+}
+.h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+    height: 300px;
+    width: 200px;
+}
+.h4FB {grid-area: img1;}
+.h5FB{grid-area: img2;}
+.h6FB{grid-area: img3;}
+.h7FB{grid-area: img4;}
+.h8FB{grid-area: img5;}
+/* end of sec2 of main body facebook Page */
+
+/* start of sec4 of main body facebook Page */
+.sec2FB{
+    margin: 20px;
+}
+.sec2Div1FB{
+    display: inline;
+}
+.sec2Div1FB h2{
+    font-size: xx-large;
+    text-decoration: underline solid;
+}
+.sec2Div1FB p{
+    font-size: xx-large;
+}
+/* end of sec4 of main body facebook Page */
+/* start of sec5 of main body facebook Page */
+.sec3FB{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    'imgSec3 img2Sec3 img3Sec3'
+    'iframeSec3 iframeSec3 iframeSec3'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+}
+.sec3FB__Div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.sec3H1FB{
+    grid-area: imgSec3;
+}
+.sec3H2FB{
+    grid-area: img2Sec3;
+}
+.sec3H3FB{
+    grid-area: img3Sec3;
+}
+.sec3H4FB{
+    grid-area: iframeSec3;
+}
+.sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+    width: 550px;
+    height: 300px;
+}
+.sec3H4FB iframe{
+    width: 800px;
+    height: 400px;
+}
+/* end of sec5 of main body facebook Page */
+/* General borders */
+.sec3H4FB iframe,.h1FB h1,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+    border-color: #3234b8;
+    border-radius: 50px;
+    border-style: inset double;
+    border-width: 20px;
+    object-fit: cover;
+}
+/* General titles font */
+.sec2Div1FB p, .h3FB p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
+    color: white;
+}
+.h1FB h1, .h2FB h2, .sec2Div1FB h2, .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+    font-family: 'Poltawski Nowy',serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+/* End of Facebook page modifications */
+
+/* Start of Youtube Page modifications */
+.bodyYT{
+    margin: 20px;
+    background: url(../images/Backgrounds/youtubeBackground.svg);
+    background-size: cover;
+}
+.footerDivYT{
+    text-align: center;
+    color: white;
+}
+.footerDivYT svg{
+    color: white;
+}
+.footerDivYT a{ 
+    border-color: rgb(255, 255, 255); 
+    margin: 10px;
+}
+
+/* start of sec1 of main body Youtube Page  */
+
+.sec1YT{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 1fr;
+    grid-template-areas: 
+    'titleYT titleYT titleYT titleYT'
+    'subtitleYT subtitleYT .. ..'
+    'logoYT pYT pYT pYT'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.sec1__DivYT{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.h1YT{
+    grid-area: titleYT;
+    justify-content: center;
+}
+.h1YT h1{
+    font-size: 50px;
+}
+.h2YT{
+    grid-area: logoYT;
+}
+.h2YT img{
+    border-radius: 100px;
+    padding: 10px;
+    height: 250px;
+    width: 400px;
+}
+.h3YT{
+    grid-area: subtitleYT;
+}
+.h3YT h2{
+    font-size: 50px;
+}
+.h4YT{
+    grid-area: pYT;
+}
+.h4YT p{
+    font-size: xx-large;
+}
+/* end of sec1 of main body Youtube Page  */
+
+/* Start of sec2 of main body Youtube page */
+.sec2YT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2YT div{
+    text-align: center;
+}
+.sec2YT img{
+    margin: 20px;
+    border-radius: 50px;
+    height: 400px;
+    width: 400px;
+}
+/* end of sec2 of main body Youtube Page  */
+
+/* Start of sec3 of main body Youtube Page */
+.sec3YT{
+    display: inline;
+}
+.sec3Div1YT{
+    display: inline;
+}
+.sec3Div1YT p{
+    font-size: xx-large;
+    margin: 0px 20px;
+}
+.sec3Div1YT h2{
+    font-size: xx-large;
+}
+.sec3Div2YT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sec3Div2YT h3{
+    font-size: xx-large;
+    border-radius: 25px;
+    border-style: groove;
+    border-color: rgb(253, 253, 251);
+}
+.sec3Div2YT div{
+    display: inline;
+    text-align: center;
+}
+.sec3Div2YT img{
+    margin: 20px;
+    border-radius: 50px;
+    height: 300px;
+    width: 500px;
+}
+.sec3Div3YT{
+    display: inline;
+}
+.sec3Div3YT div{
+    text-align: center;
+}
+.sec3Div3YT iframe{
+    border-radius: 50px;
+    height: 400px;
+    width: 900px;
+}
+/* end of sec3 of main body Youtube page */
+/* borders style */
+.h1YT h1, .sec2YT img, .sec3Div2YT img, .sec3Div3YT iframe{
+    border-style: groove double;
+    border-color: #f4f1f1;
+    border-width: 20px;
+    object-fit: cover;
+}
+/* fonts style */
+.h1YT h1, .h3YT h2, .sec2Div1YT h2, .sec3Div1YT h2, .sec3Div2YT h3, .sec3Div3YT h2{
+    text-align: center;
+    font-family: 'Poltawski Nowy',serif;
+    color: white;
+    font-weight: 10px ;
+}
+.h4YT p,.sec3Div1YT p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
+    color: white;
+}
+/* subtitle decorations */
+.h3YT h2, .sec3Div1YT h2, .sec3Div3YT h2{
+    text-decoration: underline double;
+    text-decoration-color: white;
+    padding: 20px;
+}
+/* End of Youtube Page modifications */
+
+/*Start of TikTok page modifications  */
+.bodyTT{
+    background: url(../images/Backgrounds/tiktokBackground.svg);
+    background-size: cover;
+    margin: 20px;
+}
+.footerDivTT{
+    text-align: center;
+    color: white;
+}
+.footerDivTT svg{
+    color: white;
+}
+.footerDivTT a{ 
+    border-color: rgb(255, 255, 255); 
+    margin: 10px;
+}
+/* Start of sec1 of main body TikTok page */
+.sec1TT{
+    display: inline;
+    padding: 10px;
+}
+.sec1Div1TT{
+    display: inline;
+}
+.sec1Div1TT h1{
+    padding: 5px;
+    border-radius: 100px;
+    font-size: xx-large;
+}
+.sec1Div1TT p{
+    padding: 20px 20px;
+    font-size: xx-large;
+}
+.sec1Div2TT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px ;
+}
+.sec1SubDiv1{
+    display: inline;
+    text-align: center;
+}
+.sec1SubDiv1 img{
+    border-radius: 100px;
+}
+.sec1SubDiv1 h2{
+    padding: 5px;
+    font-size: x-large;
+    border-radius: 100px;
+}
+.sec1SubDiv2{
+    display: inline;
+}
+.sec1SubDiv2 h2{
+    padding: 5px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: xx-large;
+}
+.sec1SubDiv2 ul{
+    margin: 0px 10px;
+    font-size: 25px;
+    padding: 0px 20px;
+}
+/* end of sec1 of main body TikTok page */
+
+/* start of sec2 of main body TikTok page */
+.sec2TT{
+    display: inline;
+}
+.sec2Div1TT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2Div1TT img{
+    border-radius: 100px;
+    margin: 20px;
+    width: 400px;
+    object-fit: cover;
+}
+.sec2Div2TT{
+    display: inline;
+}
+.sec2Div2TT h2{
+    margin: 10px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: xx-large;
+}
+.sec2Div2TT p{
+    font-size: xx-large;
+    margin: 20px 10px;
+}
+.sec2Div3TT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2Div3TT iframe{
+    margin: 20px;
+    width: 600px;
+    height: 300px;
+}
+/* end of sec2 of main body TikTok page */
+
+/* borders styles */
+.sec1Div1TT h1, .sec1SubDiv1 h2,.sec2Div1TT img, .sec2Div3TT iframe{
+    border-style: inset double;
+    border-width: 10px;
+    border-color: rgb(248, 242, 242);
+}
+/* font styles */
+.sec1Div1TT h1,.sec1SubDiv1 h2, .sec1SubDiv2 h2,.sec2Div2TT h2{
+    font-family: 'Poltawski Nowy',serif;
+    color: white;
+    text-align: center;
+}
+.sec1Div1TT p, .sec1SubDiv2 ul,.sec2Div2TT p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
+    color: white;
+}
+/*end of TikTok page modifications  */
+
