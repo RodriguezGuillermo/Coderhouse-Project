@@ -15,10 +15,11 @@ font-family: 'PT Sans Narrow', sans-serif;
     align-items: center;
     justify-content: space-between;
     margin: 30px;
+    flex-wrap: wrap;
 }
 .headerNavGeneral img{
     border-radius: 100%;
-    border: 5px solid;
+    border: 5px solid; 
     object-fit: cover;
     width: 150px;
     height: 150px;
@@ -48,7 +49,7 @@ font-family: 'PT Sans Narrow', sans-serif;
 .btn a{
     text-decoration: none;
     font-family: 'Poltawski Nowy', serif;
-    font-size: medium;
+    font-size: large;
     color: white;
 }
 /* Boton 2 */
@@ -60,7 +61,7 @@ font-family: 'PT Sans Narrow', sans-serif;
 .btn-2:hover{
     background-color: rgb(0, 0, 0);
     box-shadow: 0 0 20px var(--color);
-    border-color: var(--color);
+    border-color: grey;
 }
 .btn-2:hover a{
     font-weight: bolder;
@@ -96,13 +97,13 @@ font-family: 'PT Sans Narrow', sans-serif;
 /* Boton 1 */
 .btn-1{
     transition: all 0.8s;
-    /* border: 3px solid; */
-    /* border-color: white; */
+    border: 3px solid;
+    border-color: white;
 }
 .btn-1:hover{
     background-color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 20px var(--color);
-    border-color: white;
+    box-shadow: 0 0 20px var(--color);
+    border-color: grey;
 }
 .btn-1:hover a{
     font-weight: bolder;
@@ -115,13 +116,13 @@ font-family: 'PT Sans Narrow', sans-serif;
     transition: all 0.6s ease;
 }
 .btn-1 span:nth-child(1){
-    right: -10px;
-    top: 10%;
+    right: 10px;
+    top: -10%;
     background-color: #ffffff;
 }
 .btn-1 span:nth-child(2){
-    left: -10px;
-    bottom: 10%;
+    left: 10px;
+    bottom: -10%;
     background-color: rgb(146, 145, 145);
 }
 .btn-1:hover span:nth-child(1){
@@ -914,3 +915,20 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 /*end of TikTok page modifications  */
 
+/* `xs` returns only a ruleset and no media query
+... { ... } */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { ... }
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+/*`lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/*`xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
+
+/*`xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { ... }
