@@ -12,9 +12,10 @@ font-family: 'PT Sans Narrow', sans-serif;
 /* all pages NavHeader */
 .headerNavGeneral{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 30px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 .headerNavGeneral img{
@@ -25,11 +26,7 @@ font-family: 'PT Sans Narrow', sans-serif;
     height: 150px;
     border-color: white;
 }
-.ulHeaderGeneral{
-    list-style-type: none;
-    display: flex;
-    gap: 40px;
-}
+
 .botoneraHeader {
     display: flex;
     gap: 30px;
@@ -40,32 +37,31 @@ font-family: 'PT Sans Narrow', sans-serif;
 .btn{
     display: inline;
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 30px;
     text-decoration: none;
     letter-spacing: 5px;
     transform: all 0.8s ease;
     border-radius: 100px;
+    border: 3px solid;
+    border-color: white;
+    transition: all 0.8s;
 }
 .btn a{
     text-decoration: none;
     font-family: 'Poltawski Nowy', serif;
-    font-size: large;
+    font-size: medium;
     color: white;
 }
-/* Boton 2 */
-.btn-2{
-    transition: all 0.8s;
-    border: 3px solid;
-    border-color: white;
-}
-.btn-2:hover{
+.btn:hover{
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 20px var(--color);
     border-color: grey;
 }
-.btn-2:hover a{
+.btn:hover a{
     font-weight: bolder;
 }
+/* Boton 2 */
+
+
 .btn-2 span:nth-child(n){
     position: absolute;
     width: 10px;
@@ -95,19 +91,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 
 /* Boton 1 */
-.btn-1{
-    transition: all 0.8s;
-    border: 3px solid;
-    border-color: white;
-}
-.btn-1:hover{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 20px var(--color);
-    border-color: grey;
-}
-.btn-1:hover a{
-    font-weight: bolder;
-}
 .btn-1 span:nth-child(n){
     position: absolute;
     width: 10px;
@@ -274,7 +257,7 @@ font-family: 'PT Sans Narrow', sans-serif;
     text-align: justify;
 }
 /* images border style */
-.h3Index img, .indexImg2, .mainS3 img{
+.h3Index img, .indexImg2 , .mainS3 img{
     object-fit: cover;
     border-radius: 100px;
     border-style: inset outset;
@@ -388,6 +371,8 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 .img1{
     grid-area: img1;
+    width: 300px;
+    height: 300px;
 }
 .img2{
     grid-area: img2; 
@@ -699,6 +684,7 @@ font-family: 'PT Sans Narrow', sans-serif;
 /* Start of sec2 of main body Youtube page */
 .sec2YT{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -729,6 +715,7 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 .sec3Div2YT{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -862,12 +849,12 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 .sec2Div1TT{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 .sec2Div1TT img{
     border-radius: 100px;
-    margin: 20px;
     width: 400px;
     object-fit: cover;
 }
@@ -915,20 +902,172 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 /*end of TikTok page modifications  */
 
-/* `xs` returns only a ruleset and no media query
-... { ... } */
-
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { ... }
-
-/* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { ... }
-
-/*`lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { ... }
-
+/* Media Queries */
 /*`xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { ... }
-
-/*`xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) { ... }
+@media only screen and (max-width: 1199.98px) { 
+    /* Index page */
+    .btn{
+        letter-spacing: 5px;
+        transform: all 0.8s ease;
+        border-radius: 100px;
+    }
+    .btn a{
+        text-decoration: none;
+        font-family: 'Poltawski Nowy', serif;
+        font-size: small;
+        color: white;
+    }
+    .mainS1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 100px 2fr 300px;
+        grid-template-areas: 
+        'h1Index h1Index h1Index h1Index'
+        'h2Index  h2Index  h2Index ..'
+        'h4Index h4Index h4Index h4Index'
+        'h3Index h3Index h3Index h3Index'
+        ;
+        gap: 10px;
+    }
+    .h3Index img{
+        width: 500px;
+        height: 300px;
+    }
+    .indexImg2{
+        height: 400px;
+    }
+    .mainS3 img{
+        width: 500px;
+    }
+    /* End of Index page */
+    /* TikTok page */
+    .sec1Div2TT{
+        flex-wrap: wrap;
+    }
+    /* End of TikTok page */
+    /* Youtube Page */
+    .sec1YT{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 200px 200px 1fr;
+        grid-template-areas: 
+        'titleYT titleYT titleYT titleYT'
+        'subtitleYT subtitleYT subtitleYT logoYT'
+        'pYT pYT pYT pYT'
+        ;
+        margin: 20px;
+    }
+    .h2YT img{
+        height: 200px;
+        width: 400px;
+    }
+    /* End of Youtube Page */
+}
+/*`lg` applies to medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991.98px) { 
+    /* Index page */
+    .mainS2 div{
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .indexImg2{
+        width: 400px;
+    }
+    .headerNavGeneral {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    /* End Index page */
+    /* Youtube Page */
+    .sec1YT{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 200px 100px 200px 1fr;
+        grid-template-areas: 
+        'titleYT titleYT titleYT titleYT'
+        'subtitleYT subtitleYT subtitleYT subtitleYT'
+        'logoYT logoYT logoYT logoYT'
+        'pYT pYT pYT pYT'
+        ;
+        margin: 20px;
+    }
+    .h1YT h1{
+        font-size: 45px;
+    }
+    .h2YT img{
+        height: 200px;
+        width: 400px;
+        align-content: center;
+        justify-content: center;
+    }
+    .h3YT{
+        align-content: center;
+        justify-content: center;
+    }
+    .h4YT p{
+        font-size: 30px;
+    }
+    .sec3Div3YT iframe{
+        height: 400px;
+        width: 700px;
+    }
+    .sec3Div1YT p{
+        font-size: 30px;
+    }
+    /* End of Youtube Page */
+    /* TikTok Page */
+    .sec1Div1TT p{
+        font-size: 30px;
+    }
+    .sec2Div2TT p{
+        font-size: 30px;
+    }
+    /* End of TikTok page */
+}
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 767.98px) { 
+    /* Index page */
+    .mainS1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 1fr 300px;
+        grid-template-areas: 
+        'h1Index h1Index h1Index h1Index'
+        '.. h2Index h2Index ..'
+        'h4Index h4Index h4Index h4Index'
+        'h3Index h3Index h3Index h3Index'
+        ;
+    }
+    .h3Index img{
+        width: 500px;
+        height: 300px;
+    }
+    .indexImg2{
+        height: 400px;
+    }
+    .h1Index h1{
+        font-size: 25px;
+    }
+    .h2Index{
+        align-items: center;
+        justify-content: start;
+    }
+    .h2Index h2{
+        font-size: xx-large;
+    }
+    .h4Index p{
+        font-size: x-large;
+    }
+    .indexImg2{
+        height: 300px;
+    }
+    .mainS3 img{
+        width: 400px;
+    }
+    /* End Index page */
+    /* Youtube Page */
+    .sec3Div3YT iframe{
+        height: 300px;
+        width: 500px;
+    }
+    /* End of youtube page */
+}
