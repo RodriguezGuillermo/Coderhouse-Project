@@ -1,0 +1,23 @@
+@mixin display-flex($direction,$justify,$align,$wrap,$gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+@mixin width-height($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin border-style($radius,$style,$color,$width){
+    border-radius: $radius;
+    border-style: $style;
+    border-color: $color;
+    border-width: $width;
+}
+@mixin text-style($family,$align,$color){
+    font-family: $family;
+    text-align: $align;
+    color: $color;
+}

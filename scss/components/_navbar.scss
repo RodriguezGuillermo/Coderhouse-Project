@@ -1,0 +1,119 @@
+.headerNavGeneral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+    
+    img{
+        border-radius: 100%;
+        border: 5px solid; 
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        border-color: white;
+    }
+    .botoneraHeader {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            font-family: 'Poltawski Nowy', serif;
+            font-size: medium;
+            color: white;
+        }
+
+        .btn{
+            display: inline;
+            position: relative;
+            padding: 20px 30px;
+            text-decoration: none;
+            letter-spacing: 5px;
+            transform: all 0.8s ease;
+            border-radius: 100px;
+            border: 3px solid;
+            border-color: white;
+            transition: all 0.8s;
+
+            &:hover{
+                background-color: rgb(0, 0, 0);
+                border-color: grey;
+                a{
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        //Boton 1   NO FUNCIONA EL HOVER
+        .btn-1{
+
+            span{
+                &:nth-child(n){
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 3px solid;
+                    transition: all 0.6s ease;
+                }
+                &:first-child{
+                    right: 10px;
+                    top: -10%;
+                    background-color: #ffffff;
+
+                    :hover {
+                        top: 100%;
+                        transform: rotate(90deg);
+                        color: var(--color);
+                        background-color: rgb(146, 145, 145);
+                    }
+                }
+                &:last-child{
+                    left: 10px;
+                    bottom: -10%;
+                    background-color: rgb(146, 145, 145);
+
+                    :hover {
+                        bottom: 100%;
+                        transform: rotate(90deg);
+                        color: var(--color);
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        //Boton 2 ASIMILAR AL BOTON 1
+        .btn-2 span:nth-child(n){
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid;
+            transition: all 0.6s ease;
+        }
+        .btn-2 span:nth-child(1){
+            right: 10%;
+            top: -10px;
+            background-color: #fff;
+        }
+        .btn-2 span:nth-child(2){
+            left: 10%;
+            bottom: -10px;
+        }
+        .btn-2:hover span:nth-child(1){
+            right: 80%;
+            transform: rotate(90deg);
+            color: var(--color);
+            background-color: var(--color);
+        }
+        .btn-2:hover span:nth-child(2){
+            left: 80%;
+            transform: rotate(90deg);
+            color: var(--color);
+        }
+    }
+}

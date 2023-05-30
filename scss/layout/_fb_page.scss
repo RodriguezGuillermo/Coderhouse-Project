@@ -1,0 +1,123 @@
+.bodyFB{
+    background: url("../images/Backgrounds/facebookBackgroundImg.svg");
+    background-size: cover;
+    padding: 0px 30px;
+    .h3SubDiv {
+        svg{ 
+            border-color: rgb(114, 124, 250); 
+        }
+    }
+}
+
+
+/* start of sec1 of main body facebook Page */
+.sec1FB{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 100px 100px 200px 200px 300px;
+    grid-template-areas: 
+    '.. title title title title title ..'
+    'subtitle subtitle .. .. .. .. ..'
+    'paragraph paragraph paragraph paragraph paragraph paragraph paragraph'
+    '.. img1 img2 img3 img4 img5 ..'
+    '.. img1 img2 img3 img4 img5 ..'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+    margin: 40px;
+
+    &__Grid{
+        @include display-flex(row,center,center,wrap,5px);
+        @include width-height(100%,100%);
+    }
+    .h1FB{
+        grid-area: title;
+        align-content: center;
+        background-color: #7d8bf7;
+        padding: 10px;
+    }
+    .h2FB{
+        grid-area: subtitle;
+        align-items: end;
+    }
+    .h3FB{
+        grid-area: paragraph;
+    } 
+    .h4FB, .h5FB, .h6FB, .h7FB, .h8FB{
+        display: inline;
+        text-align: center;
+    }
+    .h4FB {grid-area: img1;}
+    .h5FB{grid-area: img2;}
+    .h6FB{grid-area: img3;}
+    .h7FB{grid-area: img4;}
+    .h8FB{grid-area: img5;}
+
+    .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+        @include width-height(200px,300px);
+    }
+
+}
+.sec2FB{
+    margin: 40px;
+    .sec2Div1FB{
+        display: inline;
+    }
+}
+.sec3FB{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    'imgSec3 img2Sec3 img3Sec3'
+    'iframeSec3 iframeSec3 iframeSec3'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+
+    &__Div{
+        @include display-flex(row,center,center,wrap,5px);
+    }
+    .sec3H1FB{grid-area: imgSec3;}
+    .sec3H2FB{grid-area: img2Sec3;}
+    .sec3H3FB{grid-area: img3Sec3;}
+    .sec3H4FB{grid-area: iframeSec3;}
+
+    .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+        @include width-height(500px,300px);
+    }
+    .sec3H4FB iframe{
+        @include width-height(600px,400px);
+    }
+}
+
+/* General borders */
+.sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+    object-fit: cover;
+    @include border-style(50px, inset double, #3234b8, 20px);
+}
+/* General titles font and styles */
+//title
+.h1FB{
+    font-size: 50px;
+    @include text-style($title-font,center,white);
+}
+//subtitles
+.h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+    @include text-style($title-font,center,white);
+    font-size: xx-large;
+}
+.h2FB, .sec2Div1FB h2{
+    @include text-style($title-font,center,white);
+    font-size: xx-large;
+    text-decoration: underline solid;
+}
+//paragraphs
+.sec2Div1FB p, .h3FB p{
+    @include text-style($paragraph-font,justify,white);
+    font-weight: 2px solid;
+    font-size: xx-large;
+}
+

@@ -1,0 +1,80 @@
+.bodyTT{
+    background: url("../images/Backgrounds/tiktokBackground.svg");
+    background-size: cover;
+    padding: 30px;
+}
+.footerDiv a{ 
+    border-color: rgb(255, 255, 255); 
+}
+/* Start of sec1 of main body TikTok page */
+.sec1TT{
+    display: inline;
+    margin: 40px;
+
+    .sec1TT__Div1{
+        display: inline;
+    }
+
+    .sec1TT__Div2{
+        @include display-flex(row,center,center,nowrap,5px);
+        
+        &__SubDiv1{
+            display: inline;
+            text-align: center;
+        }
+        &__SubDiv2{
+            @include display-flex(column,center,center,wrap,5px);
+            h2{
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+        }
+    }
+} 
+.sec2TT{
+    @include display-flex(column,center,center,wrap,20px);
+    margin: 40px;
+    .sec2TT__Div1{
+        @include display-flex(row,center,center,wrap,20px);
+        img{
+            @include width-height(400px, auto);
+            
+        }
+    }
+    .sec2TT__Div2{
+        display: inline;
+        h2{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+    }
+    .sec2TT__Div3{
+        @include display-flex(row,center,center,wrap,5px);
+        iframe{
+            @include width-height(600px,300px);
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+.sec1TT__Div1 h1, .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv1 img,.sec2TT__Div1 img, .sec2TT__Div3 iframe{
+    @include border-style(75px,inset double,rgb(248, 242, 242),10px);
+    object-fit: cover;
+}
+/* font styles */
+.sec1TT__Div1 h1{
+    @include text-style($title-font,center,white);
+    font-size: 50px;
+}
+.sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv2 h2,.sec2TT__Div2 h2{
+    @include text-style($title-font,center,white);
+    font-size: 40px;
+}
+.sec1TT__Div1 p, .sec1TT__Div2__SubDiv2 ul,.sec2TT__Div2 p{
+    @include text-style($paragraph-font,justify,white);
+    font-size: xx-large;
+}
+.sec1TT__Div2__SubDiv2 ul li{
+    font-size: 25px;
+    @include text-style($paragraph-font,justify,white);
+}

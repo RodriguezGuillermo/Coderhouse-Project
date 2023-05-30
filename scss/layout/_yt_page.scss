@@ -1,0 +1,110 @@
+.bodyYT{
+    background: url("../images/Backgrounds/youtubeBackground.svg");
+    background-size: cover;
+    padding:30px;
+}
+.footerDiv svg{ 
+    border-color: rgb(10, 4, 4); 
+}
+
+.sec1YT{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 1fr;
+    grid-template-areas: 
+    'titleYT titleYT titleYT titleYT'
+    'subtitleYT .. .. ..'
+    'logoYT pYT pYT pYT'
+    ;
+    justify-items: center;
+    place-items: center;
+    gap: 10px;
+    margin: 40px;
+
+    &__Grid{
+        @include display-flex(row,center,center,wrap,5px);
+        @include width-height(100%,100%);
+    }
+    .h1YT{
+        grid-area: titleYT;
+    }
+    .h2YT{
+        grid-area: logoYT;
+        img{
+            @include width-height(400px,250px);
+        }
+    }
+    .h3YT{
+        grid-area: subtitleYT;
+    }
+    .h4YT{
+        grid-area: pYT;
+    }
+}
+
+.sec2YT{
+    margin: 40px;
+    @include display-flex(row,center,center,wrap,5px);
+    div{
+        text-align: center;
+    }
+    img{
+        margin: 20px;
+        @include width-height(400px,400px);
+    }
+}
+
+.sec3YT{
+    margin: 40px;
+    @include display-flex(column,center,center,wrap,5px);
+    .sec3YT__Div1{
+        display: inline;
+    }
+    .sec3YT__Div2{
+        @include display-flex(row,center,center,wrap,20px);
+        div{
+            display: inline;
+            text-align: center;
+        }
+        img{
+            @include width-height(500px,300px);
+        }
+    }
+    .sec3YT__Div3{
+        display: inline;
+        div{
+            text-align: center;
+        }
+        iframe{
+            @include width-height(900px, 400px);
+        }
+    }
+}
+/* borders style */
+.h1YT,.h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe{
+    object-fit: cover;
+    @include border-style(75px,groove double,#f4f1f1,20px);
+}
+/* fonts style and sizes */
+.h1YT{
+    font-size: 50px;
+    @include text-style($title-font, center, white);
+}
+.h3YT, .sec2YT__Div h2, .sec3YT__Div1 h2, .sec3YT__Div2 h3, .sec3YT__Div3 h2{
+    @include text-style($title-font, center, white);
+    font-weight: 10px ;
+    font-size: 40px;
+}
+.h4YT p,.sec3YT__Div1 p{
+    @include text-style($paragraph-font, justify, white);
+    font-size: xx-large;
+}
+.sec3YT__Div2 h3{
+    @include border-style(25px,groove,white,3px);
+}
+/* subtitle decorations */
+.h3YT h2, .sec3YT__Div1 h2, .sec3YT__Div3 h2,.h3YT{
+    text-decoration: underline double;
+    text-decoration-color: white;
+    padding: 20px;
+}

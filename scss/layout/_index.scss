@@ -1,0 +1,93 @@
+.bodyIndex{
+    background : url("../images/Backgrounds/indexBackgroundImg.svg");
+    background-size: cover;
+    padding: 0px 30px;
+}
+.sec1Index {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    'h1Index h1Index h1Index h1Index'
+    'h2Index  h2Index  .. ..'
+    'h3Index h4Index h4Index h4Index'
+    'h3Index h4Index h4Index h4Index'
+    ;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px;
+
+    &__Grid{
+        @include width-height(100%,100%);
+        @include display-flex(row,center,center,wrap,5px);
+    }
+
+    .h1Index{
+        grid-area: h1Index;
+        text-align: center;
+        background-color: #820bd7;
+        border-style: groove;
+    }
+
+    .h2Index{
+        grid-area: h2Index;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+    .h3Index{
+        grid-area: h3Index;
+        margin-right: 10px;
+        @include width-height(400px,300px);
+    }
+    
+    .h4Index{
+        grid-area: h4Index;
+    }
+}
+.sec2Index{
+    @include display-flex(column,center,center,wrap,5px);
+    padding: 20px;
+
+    div{
+        @include display-flex(row,center,center,nowrap,5px);
+        padding: 10px 0px;
+    }
+    img{
+        margin-left: 10px;
+        @include width-height(300px,400px);
+    }
+}
+.sec3Index{
+    @include display-flex(column,center,center,wrap,5px);
+    padding-bottom: 10px;
+    text-align: center;
+
+    img{@include width-height(800px,auto);}
+
+    h2{
+        padding: 10px;
+    }
+}
+/* subtitle, Subtitle and paragraphs fonts style*/
+.h1Index{
+    @include text-style($title-font,center,white);
+    font-size: 45px;
+}
+.h1Index, .h2Index, .sec2Index h2, .sec3Index h2{
+    @include text-style($title-font,center,white);
+    text-decoration: underline;
+    font-size: 40px;
+}
+.h4Index p , .sec2Index p, .sec3Index p{
+    @include text-style($paragraph-font,justify,white);
+    font-size: xx-large;
+}
+/* images and texts border style */
+.h1Index,.h3Index, .sec2Index img , .sec3Index img{
+    object-fit: cover;
+    @include border-style(100px,inset outset, #9107f4,15px);
+}
+
+.footerDiv a{ border-color: rgb(228, 3, 232);}
