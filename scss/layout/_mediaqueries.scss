@@ -1,0 +1,505 @@
+@media only screen and (max-width: 1199.98px){
+    //Nav Bar
+    .headerNavGeneral{
+        @include display-flex(column, center, center,wrap, 10px);
+        margin-bottom: 30px;
+    }
+    //End of Nav Bar   
+    //Index page
+    .sec1Index {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 100px 300px 1fr;
+        grid-template-areas: 
+        'h1Index h1Index h1Index h1Index'
+        '..  h2Index  h2Index ..'
+        '.. h3Index h3Index ..'
+        'h4Index h4Index h4Index h4Index'
+        ;
+        .h2Index{
+            justify-content: center;
+        }
+        .h3Index{
+            @include width-height(500px,300px);
+        }
+    }
+    .sec2Index{
+        @include display-flex(column,center,center,wrap,5px);
+        margin: 40px;
+    
+        div{
+            @include display-flex(column,center,center,nowrap,5px);
+            padding: 10px 0px;
+        }
+        img{
+            margin-left: 10px;
+            @include width-height(500px,400px);
+        }
+    }
+    /* subtitle, Subtitle and paragraphs fonts style*/
+    .h1Index{
+        font-size: 35px;
+    }
+    .h2Index, .sec2Index h2, .sec3Index h2{
+        font-size: 30px;
+    }
+    .h4Index p , .sec2Index p, .sec3Index p{
+        font-size: x-large;
+    }
+    //End of Index page
+    //Youtube Page
+    .sec1YT{
+        grid-template-rows: 100px 200px 1fr;
+        grid-template-areas: 
+        'titleYT titleYT titleYT titleYT'
+        'subtitleYT subtitleYT logoYT logoYT'
+        ' pYT pYT pYT pYT'
+        ;
+        .h2YT{
+            img{
+                @include width-height(400px,200px);
+            }
+        }
+    }
+    
+    .sec2YT{
+        h2{
+            font-size: 25px;
+        }
+        img{
+            @include width-height(200px,300px);
+        }
+    }
+    
+    .sec3YT{
+        .sec3YT__Div2{
+            img{
+                @include width-height(400px,300px);
+            }
+        }
+        .sec3YT__Div3{
+            display: inline;
+            div{
+                text-align: center;
+            }
+            iframe{
+                @include width-height(700px, 400px);
+            }
+        }
+    }
+    /* borders style */
+    .h1YT,.h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe{
+        border-width: 10px
+    }
+    /* fonts style and sizes */
+    .h1YT{
+        font-size: 40px;
+    }
+    .h3YT, .sec3YT__Div1 h2, .sec3YT__Div2 h3, .sec3YT__Div3 h2{
+        font-size: 35px;
+    }
+    .h4YT p,.sec3YT__Div1 p{
+        font-size: x-large;
+    }
+    //End of Yotube page
+
+    //Tiktok page
+    /* font styles */
+    .sec1TT__Div1 h1{
+        @include text-style($title-font,center,white);
+        font-size: 45px;
+    }
+    .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv2 h2,.sec2TT__Div2 h2{
+        @include text-style($title-font,center,white);
+        font-size: 35px;
+    }
+    .sec1TT__Div1 p, .sec1TT__Div2__SubDiv2 ul,.sec2TT__Div2 p{
+        @include text-style($paragraph-font,justify,white);
+        font-size: x-large;
+    }
+    .sec1TT__Div2__SubDiv2 ul li{
+        font-size: 20px;
+        @include text-style($paragraph-font,justify,white);
+    }   
+    //End of TikTok page
+}
+
+
+@media only screen and (max-width: 991.98px){
+    //Index page
+    .sec3Index{
+        img{@include width-height(600px,auto);}
+    }
+    /* subtitle, Subtitle and paragraphs fonts style*/
+    .h1Index{
+        font-size: 35px;
+    }
+    .h2Index, .sec2Index h2, .sec3Index h2{
+        font-size: 30px;
+    }
+    .h4Index p , .sec2Index p, .sec3Index p{
+        font-size: x-large;
+    }
+    //End of Index page
+    //Footer
+    .footerDiv{
+        .h3Footer{
+            font-size: x-large;
+            margin: 0px;
+        }
+    }
+    //End of Footer
+    //Youtube Page
+    .sec1YT{
+        margin: 20px;
+        grid-template-rows: 100px 200px 1fr;
+        grid-template-areas: 
+        'titleYT titleYT titleYT titleYT'
+        'subtitleYT subtitleYT logoYT logoYT'
+        ' pYT pYT pYT pYT'
+        ;
+        .h2YT{
+            img{
+                @include width-height(250px,150px);
+            }
+        }
+    }
+    
+    .sec2YT{
+        margin: 20px;
+        h2{
+            font-size: 25px;
+        }
+        img{
+            @include width-height(200px,300px);
+        }
+    }
+    
+    .sec3YT{
+        margin: 20px;
+        .sec3YT__Div2{
+            img{
+                @include width-height(300px,200px);
+            }
+        }
+        .sec3YT__Div3{
+            iframe{
+                @include width-height(500px, 400px);
+            }
+        }
+    }
+    /* fonts style and sizes */
+    .h1YT{
+        font-size: 38px;
+    }
+    .h3YT, .sec3YT__Div1 h2, .sec3YT__Div2 h3, .sec3YT__Div3 h2{
+        font-size: 30px;
+    }
+    .h4YT p,.sec3YT__Div1 p{
+        font-size: x-large;
+    }
+    //End of Yotube page
+
+    //Tiktok page
+    .sec1TT{
+        margin: 0px;
+        .sec1TT__Div2{
+            @include display-flex(column,center,center,nowrap,5px);
+        }
+    } 
+    .sec2TT{
+        @include display-flex(column,center,center,wrap,20px);
+        margin: 0px;
+    }
+    /* font styles */
+    .sec1TT__Div1 h1{
+        @include text-style($title-font,center,white);
+        font-size: 42px;
+    }
+    .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv2 h2,.sec2TT__Div2 h2{
+        @include text-style($title-font,center,white);
+        font-size: 32px;
+    }
+    .sec1TT__Div1 p, .sec1TT__Div2__SubDiv2 ul,.sec2TT__Div2 p{
+        @include text-style($paragraph-font,justify,white);
+        font-size: 23px;
+    }
+    .sec1TT__Div2__SubDiv2 ul li{
+        font-size: 20px;
+        @include text-style($paragraph-font,justify,white);
+    }   
+    //End of TikTok page
+}
+
+
+@media only screen and (max-width: 767.98px){
+    //Footer
+    .footerDiv{
+        .h3Footer{
+            font-size: large;
+            margin: 0px;
+        }
+        .h3SubDiv{
+            svg{
+                @include width-height(20px,20px)
+            }
+            a{
+                border-width: 0;
+                padding: 0px;
+                margin: 5px;
+            }
+        }
+    }
+    //End of Footer
+    //Index page
+    .sec1Index {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 50px 200px 1fr;
+        .h3Index{
+            @include width-height(350px,200px);
+        }
+    }
+    .sec2Index{
+        img{
+            @include width-height(300px,200px);
+        }
+    }
+    .sec3Index{
+        img{@include width-height(400px,auto);}
+    }
+    /* subtitle, Subtitle and paragraphs fonts style*/
+    .h1Index{
+        font-size: 25px;
+    }
+    .h2Index, .sec2Index h2, .sec3Index h2{
+        font-size: 23px;
+    }
+    .h4Index p , .sec2Index p, .sec3Index p{
+        font-size: large;
+    }
+    //End of Index Page
+    //Youtube Page
+    .sec1YT{
+        grid-template-rows: 100px 150px 1fr;
+        .h2YT{
+            img{
+                @include width-height(200px,100px);
+            }
+        }
+    }
+    
+    .sec2YT{
+        h2{
+            font-size: 20px;
+        }
+        img{
+            @include width-height(150px,200px);
+        }
+    }
+    
+    .sec3YT{
+        .sec3YT__Div2{
+            img{
+                @include width-height(300px,200px);
+            }
+        }
+        .sec3YT__Div3{
+            iframe{
+                @include width-height(400px, 250px);
+            }
+        }
+    }
+    /* fonts style and sizes */
+    .h1YT{
+        font-size: 35px;
+    }
+    .h3YT, .sec3YT__Div1 h2, .sec3YT__Div2 h3, .sec3YT__Div3 h2{
+        font-size: 25px;
+    }
+    .h4YT p,.sec3YT__Div1 p{
+        font-size: large;
+    }
+    //End of Yotube page
+
+    //Tiktok page
+    .sec2TT{
+        .sec2TT__Div3{
+            iframe{
+                @include width-height(600px,300px);
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+    //End of TikTok page
+}
+
+
+@media only screen and (max-width: 576px){
+    //Nav Bar
+    .headerNavGeneral{
+        img{
+            @include width-height(100px,100px);
+        }
+        .botoneraHeader{
+            a{
+                font-size: small;
+            }
+            .btn{
+                padding: 10px;
+            }
+        }
+    }
+    //End of Nav Bar
+    
+    //Footer
+    .footerDiv{
+        .h3Footer{
+            font-size: x-small;
+        }
+        .h3SubDiv{
+            svg{
+                @include width-height(15px,15px)
+            }
+        }
+    }
+    //End of Footer
+    
+    //Index page
+    .sec1Index {
+        margin: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 50px 180px 1fr;
+        grid-template-areas: 
+        'h1Index h1Index h1Index h1Index'
+        'h2Index  h2Index  h2Index h2Index'
+        'h3Index h3Index h3Index h3Index'
+        'h4Index h4Index h4Index h4Index'
+        ;
+        .h3Index{
+            @include width-height(175px,120px);
+        }
+    }
+    .sec2Index{
+        margin: 0px;
+        img{
+            @include width-height(170px,100px);
+        }
+    }
+    .sec3Index{
+        margin: 0px;
+        img{@include width-height(170px,auto);}
+    }
+    /* subtitle, Subtitle and paragraphs fonts style*/
+    .h1Index{
+        font-size: 20px;
+    }
+    .h2Index, .sec2Index h2, .sec3Index h2{
+        font-size: 15px;
+    }
+    .h4Index p , .sec2Index p, .sec3Index p{
+        font-size: smaller;
+    }
+    /* images and texts border style */
+    .h1Index,.h3Index, .sec2Index img , .sec3Index img{
+        border-radius: 25%;;
+    }
+    //End of Index Page
+    //Youtube Page
+    .sec1YT{
+        grid-template-rows: 100px 100px 150px 1fr;
+        grid-template-areas: 
+        'titleYT titleYT titleYT titleYT'
+        'subtitleYT subtitleYT subtitleYT subtitleYT'
+        '.. logoYT logoYT ..'
+        ' pYT pYT pYT pYT'
+        ;
+        .h2YT{
+            img{
+                @include width-height(200px,100px);
+            }
+        }
+        .h4YT{
+            font-size: 20px;
+        }
+    }
+    
+    .sec2YT{
+        h2{
+            font-size: 20px;
+        }
+        img{
+            @include width-height(150px,200px);
+        }
+    }
+    
+    .sec3YT{
+        .sec3YT__Div2{
+            img{
+                @include width-height(150px,100px);
+            }
+        }
+        .sec3YT__Div3{
+            display: inline;
+            div{
+                text-align: center;
+            }
+            iframe{
+                @include width-height(200px, 150px);
+            }
+        }
+    }
+    /* borders style */
+    .h1YT,.h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe{
+        border-width: 5px
+    }
+    /* fonts style and sizes */
+    .h1YT{
+        font-size: 20px;
+    }
+    .sec3YT__Div1 h2, .sec3YT__Div2 h3, .sec3YT__Div3 h2{
+        font-size: 15px;
+    }
+    .h4YT p,.sec3YT__Div1 p{
+        font-size: medium;
+    }
+    //End of Yotube page
+    //Tiktok page
+    .sec1TT{
+        .sec1TT__Div2{
+            &__SubDiv1{
+                img{
+                    @include width-height(200px,auto);
+                }
+            }
+        }
+    } 
+    .sec2TT{
+        .sec2TT__Div1{
+            img{
+                @include width-height(200px, auto);  
+            }
+        }
+        .sec2TT__Div3{
+            iframe{
+                @include width-height(200px,175px);
+            }
+        }
+    }
+    .sec1TT__Div1 h1, .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv1 img,.sec2TT__Div1 img, .sec2TT__Div3 iframe{
+        @include border-style(50px,inset double,rgb(248, 242, 242),5px);
+    }
+    /* font styles */
+    .sec1TT__Div1 h1{
+        font-size: 25px;
+    }
+    .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv2 h2,.sec2TT__Div2 h2{
+        font-size: 20px;
+    }
+    .sec1TT__Div1 p, .sec1TT__Div2__SubDiv2 ul,.sec2TT__Div2 p{
+        font-size: large;
+    }
+    .sec1TT__Div2__SubDiv2 ul li{
+        font-size: 15px;
+    }   
+    //End of TikTok page
+}

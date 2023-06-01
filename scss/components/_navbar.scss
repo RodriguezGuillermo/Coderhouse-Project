@@ -1,10 +1,5 @@
 .headerNavGeneral{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    flex-wrap: wrap;
+    @include display-flex(row, space-between, center,wrap, 0);
     
     img{
         border-radius: 100%;
@@ -48,44 +43,38 @@
                 }
             }
         }
-
-        //Boton 1   NO FUNCIONA EL HOVER
-        .btn-1{
-
-            span{
-                &:nth-child(n){
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    border: 3px solid;
-                    transition: all 0.6s ease;
-                }
-                &:first-child{
-                    right: 10px;
-                    top: -10%;
-                    background-color: #ffffff;
-
-                    :hover {
-                        top: 100%;
-                        transform: rotate(90deg);
-                        color: var(--color);
-                        background-color: rgb(146, 145, 145);
-                    }
-                }
-                &:last-child{
-                    left: 10px;
-                    bottom: -10%;
-                    background-color: rgb(146, 145, 145);
-
-                    :hover {
-                        bottom: 100%;
-                        transform: rotate(90deg);
-                        color: var(--color);
-                        background-color: white;
-                    }
-                }
-            }
+        
+        //Boton 1
+        .btn-1 span:nth-child(n){
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid;
+            transition: all 0.6s ease;
         }
+        .btn-1 span:nth-child(1){
+            right: 10px;
+            top: -10%;
+            background-color: #ffffff;
+        }
+        .btn-1:hover span:nth-child(1){
+            top: 100%;
+            transform: rotate(90deg);
+            color: var(--color);
+            background-color: rgb(146, 145, 145);
+        }
+        .btn-1 span:nth-child(2){
+            left: 10px;
+            bottom: -10%;
+            background-color: rgb(146, 145, 145);  
+        }
+        .btn-1:hover span:nth-child(2){
+                bottom: 100%;
+                transform: rotate(90deg);
+                color: var(--color);
+                background-color: white;
+        }
+        
 
         //Boton 2 ASIMILAR AL BOTON 1
         .btn-2 span:nth-child(n){

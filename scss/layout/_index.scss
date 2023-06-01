@@ -5,7 +5,7 @@
 }
 .sec1Index {
     display: grid; 
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr;
     grid-template-areas: 
     'h1Index h1Index h1Index h1Index'
@@ -48,7 +48,7 @@
 }
 .sec2Index{
     @include display-flex(column,center,center,wrap,5px);
-    padding: 20px;
+    margin: 40px;
 
     div{
         @include display-flex(row,center,center,nowrap,5px);
@@ -61,7 +61,7 @@
 }
 .sec3Index{
     @include display-flex(column,center,center,wrap,5px);
-    padding-bottom: 10px;
+    margin: 40px;
     text-align: center;
 
     img{@include width-height(800px,auto);}
@@ -75,7 +75,7 @@
     @include text-style($title-font,center,white);
     font-size: 45px;
 }
-.h1Index, .h2Index, .sec2Index h2, .sec3Index h2{
+.h2Index, .sec2Index h2, .sec3Index h2{
     @include text-style($title-font,center,white);
     text-decoration: underline;
     font-size: 40px;
