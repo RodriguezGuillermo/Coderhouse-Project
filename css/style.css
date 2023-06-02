@@ -423,7 +423,6 @@
   padding: 0px 30px;
 }
 
-/* start of section 1 main body SDpage */
 .sec1SD {
   padding: 20px;
   gap: 5px;
@@ -576,7 +575,7 @@
 .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe {
   border-radius: 100px;
   border-style: inset outset;
-  border-color: #0a97c6;
+  border-color: #05aee7;
   border-width: 10px;
   object-fit: cover;
 }
@@ -804,7 +803,7 @@
 .sec3YT .sec3YT__Div3 {
   display: inline;
 }
-.sec3YT .sec3YT__Div3 div {
+.sec3YT .sec3YT__Div3 h2 {
   text-align: center;
 }
 .sec3YT .sec3YT__Div3 iframe {
@@ -817,7 +816,7 @@
   object-fit: cover;
   border-radius: 75px;
   border-style: groove double;
-  border-color: #f4f1f1;
+  border-color: white;
   border-width: 20px;
 }
 
@@ -981,6 +980,133 @@
     text-align: justify;
     color: white;
   }
+  .sec1SD {
+    margin: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". areaT areaT areaT .." "areaT2 areaT2 areaP areaP areaP" "areaImg areaImg areaP areaP areaP" "areaImg areaImg areaP areaP areaP" "areaCN areaCN areaP areaP areaP";
+  }
+  .sec1SD .h1SD {
+    padding: 0px;
+  }
+  .sec1SD .h2SD {
+    width: 300px;
+    height: 300px;
+  }
+  .sec1SD .h3SD {
+    grid-area: areaCN;
+  }
+  .sec1SD .h4SD {
+    grid-area: areaT2;
+    padding: 20px;
+  }
+  .sec1SD .h5SD {
+    grid-area: areaP;
+    padding: 15px;
+    background-color: #0a97c6;
+  }
+  .sec2SD {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .sec2SD .sec2Img1 {
+    width: 500px;
+    height: 350px;
+  }
+  .sec2SD .sec2Img2 {
+    width: 500px;
+    height: 400px;
+  }
+  .sec2SD .sec2Img3 {
+    width: auto;
+    height: 350px;
+  }
+  /* Title, Subtitle and paragraphs fonts*/
+  .h1SD {
+    font-size: 40px;
+  }
+  .h3SD, .h4SD, .sec3__Div1SD h2 {
+    font-size: 30px;
+  }
+  .h5SD, .sec3__Div1SD p {
+    font-size: x-large;
+  }
+  .h1SD, .h3SD, .h2SD {
+    border-radius: 50px;
+    border-style: inset ridge;
+    border-color: #05aee7;
+    border-width: 10px;
+  }
+  .h5SD, .sec3__Div1SD p {
+    border-radius: 25px;
+    border-style: inset outset;
+    border-color: white;
+    border-width: 5px;
+  }
+  .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe {
+    border-radius: 100px;
+    border-style: inset outset;
+    border-color: #05aee7;
+    border-width: 10px;
+    object-fit: cover;
+  }
+  .sec1FB {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 75px 250px 300px 100px;
+    grid-template-areas: ".. title title title title title .." "subtitle subtitle subtitle .. .. .. .." "paragraph paragraph paragraph paragraph paragraph paragraph paragraph" ".. img1 img2 img3 img4 img5 .." ".. img1 img2 img3 img4 img5 ..";
+  }
+  .sec1FB .h4FB img, .sec1FB .h5FB img, .sec1FB .h6FB img, .sec1FB .h7FB img, .sec1FB .h8FB img {
+    width: 150px;
+    height: 200px;
+  }
+  .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
+    width: 270px;
+    height: 250px;
+  }
+  .sec3FB .sec3H4FB iframe {
+    width: 600px;
+    height: 400px;
+  }
+  /* General borders */
+  .sec3H4FB iframe, .h1FB, .sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img {
+    border-radius: 50px;
+    border-style: inset double;
+    border-color: #3234b8;
+    border-width: 10px;
+  }
+  /* General titles font and styles */
+  .h1FB {
+    font-size: 40px;
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+  }
+  .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  .h2FB, .sec2Div1FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline solid;
+  }
+  .sec2Div1FB p, .h3FB p {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: justify;
+    color: white;
+    font-weight: 2px solid;
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 991.98px) {
   .sec3Index img {
@@ -1086,6 +1212,71 @@
     text-align: justify;
     color: white;
   }
+  .sec1SD {
+    margin: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 1fr 1fr 1fr;
+    grid-template-areas: "areaT areaT areaT areaT areaT" "areaT2 areaT2 areaT2 .. .." "areaImg areaImg areaImg areaCN areaCN" "areaP areaP areaP areaP areaP" "areaP areaP areaP areaP areaP";
+  }
+  .sec1SD .h1SD {
+    padding: 0px;
+  }
+  .sec1SD .h2SD {
+    width: 300px;
+    height: 300px;
+  }
+  .sec1SD .h4SD {
+    padding: 20px;
+  }
+  .sec1SD .h5SD {
+    padding: 15px;
+    background-color: #0a97c6;
+  }
+  .sec3SD .sec3__Div2SD {
+    margin: 10px;
+  }
+  .sec3SD .sec3__Div2SD iframe {
+    width: 600px;
+    height: 400px;
+  }
+  .sec1FB {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sec1FB .h4FB img, .sec1FB .h5FB img, .sec1FB .h6FB img, .sec1FB .h7FB img, .sec1FB .h8FB img {
+    width: 300px;
+    height: 400px;
+  }
+  .sec3FB {
+    margin: 0px;
+    gap: 5px;
+  }
+  .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
+    width: 225px;
+    height: 200px;
+  }
+  .sec3FB .sec3H4FB iframe {
+    width: 500px;
+    height: 400px;
+  }
+  /* General titles font and styles */
+  .h1FB {
+    font-size: 35px;
+  }
+  .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2 {
+    font-size: 25px;
+  }
+  .h2FB, .sec2Div1FB h2 {
+    font-size: 25px;
+  }
+  .sec2Div1FB p, .h3FB p {
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   .footerDiv .h3Footer {
@@ -1164,6 +1355,99 @@
     height: 300px;
     width: 500px;
     height: 300px;
+  }
+  .sec1SD {
+    grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr 1fr 0.75fr;
+    grid-template-areas: "areaT areaT areaT areaT areaT" "areaT2 areaT2 areaT2 areaT2 areaT2" ".. areaImg areaImg areaImg .." ".. areaCN areaCN areaCN .." "areaP areaP areaP areaP areaP" "areaP areaP areaP areaP areaP";
+  }
+  .sec1SD .h2SD {
+    width: 300px;
+    height: 300px;
+  }
+  .sec2SD .sec2Img1 {
+    width: 400px;
+    height: auto;
+  }
+  .sec2SD .sec2Img2 {
+    width: 400px;
+    height: auto;
+  }
+  .sec2SD .sec2Img3 {
+    width: 400px;
+    height: auto;
+  }
+  .sec3SD .sec3__Div2SD iframe {
+    width: 400px;
+    height: 300px;
+  }
+  /* Title, Subtitle and paragraphs fonts*/
+  .h1SD {
+    font-size: 40px;
+  }
+  .h3SD, .h4SD, .sec3__Div1SD h2 {
+    font-size: 25px;
+  }
+  .h5SD, .sec3__Div1SD p {
+    font-size: large;
+  }
+  .sec1FB {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sec1FB .h4FB img, .sec1FB .h5FB img, .sec1FB .h6FB img, .sec1FB .h7FB img, .sec1FB .h8FB img {
+    width: 200px;
+    height: 300px;
+  }
+  .sec3FB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
+    width: auto;
+    height: 200px;
+  }
+  .sec3FB .sec3H4FB iframe {
+    width: 500px;
+    height: 400px;
+  }
+  /* General borders */
+  .sec3H4FB iframe, .h1FB, .sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img {
+    border-radius: 0px;
+    border-style: inset double;
+    border-color: #3234b8;
+    border-width: 10px;
+  }
+  /* General titles font and styles */
+  .h1FB {
+    font-size: 35px;
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+  }
+  .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  .h2FB, .sec2Div1FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-decoration: underline solid;
+  }
+  .sec2Div1FB p, .h3FB p {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1297,6 +1581,137 @@
     font-size: large;
   }
   .sec1TT__Div2__SubDiv2 ul li {
+    font-size: 15px;
+  }
+  .sec1SD {
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.2fr 1fr 0.25fr 1fr 1fr;
+    grid-template-areas: "areaT areaT areaT areaT areaT" "areaT2 areaT2 areaT2 areaT2 areaT2" ".. areaImg areaImg areaImg .." "areaCN areaCN areaCN areaCN areaCN" "areaP areaP areaP areaP areaP" "areaP areaP areaP areaP areaP";
+  }
+  .sec1SD .h1SD {
+    padding: 0px;
+  }
+  .sec1SD .h2SD {
+    width: 150px;
+    height: 250px;
+  }
+  .sec1SD .h4SD {
+    padding: 0px;
+  }
+  .sec1SD .h5SD {
+    padding: 0px;
+  }
+  .sec2SD {
+    margin: 15px 0px;
+  }
+  .sec2SD .sec2Img1 {
+    width: 200px;
+    height: auto;
+  }
+  .sec2SD .sec2Img2 {
+    width: 200px;
+    height: auto;
+  }
+  .sec2SD .sec2Img3 {
+    width: 200px;
+    height: auto;
+  }
+  .sec3SD {
+    margin: 0px;
+  }
+  .sec3SD .sec3__Div2SD {
+    margin: 10px;
+  }
+  .sec3SD .sec3__Div2SD iframe {
+    width: 200px;
+    height: 150px;
+  }
+  /* Title, Subtitle and paragraphs fonts*/
+  .h1SD {
+    font-size: 20px;
+  }
+  .h3SD, .h4SD, .sec3__Div1SD h2 {
+    font-size: 15px;
+  }
+  .h5SD, .sec3__Div1SD p {
+    font-size: small;
+  }
+  .h1SD, .h3SD, .h2SD {
+    border-radius: 50px;
+    border-style: inset ridge;
+    border-color: #05aee7;
+    border-width: 10px;
+  }
+  .h5SD, .sec3__Div1SD p {
+    border-radius: 10px;
+    border-style: inset outset;
+    border-color: white;
+    border-width: 3px;
+  }
+  .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe {
+    border-radius: 50px;
+    border-style: inset outset;
+    border-color: #05aee7;
+    border-width: 5px;
+  }
+  .sec1FB {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sec1FB .h4FB img, .sec1FB .h5FB img, .sec1FB .h6FB img, .sec1FB .h7FB img, .sec1FB .h8FB img {
+    width: 150px;
+    height: 200px;
+  }
+  .sec3FB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
+    width: 200px;
+    height: 175px;
+  }
+  .sec3FB .sec3H4FB iframe {
+    width: 200px;
+    height: 150px;
+  }
+  /* General borders */
+  .sec3H4FB iframe, .h1FB, .sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img {
+    border-radius: 50px;
+    border-style: inset double;
+    border-color: #3234b8;
+    border-width: 10px;
+  }
+  /* General titles font and styles */
+  .h1FB {
+    font-size: 25px;
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+  }
+  .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  .h2FB, .sec2Div1FB h2 {
+    font-family: "Poltawski Nowy", serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline solid;
+  }
+  .sec2Div1FB p, .h3FB p {
     font-size: 15px;
   }
 }

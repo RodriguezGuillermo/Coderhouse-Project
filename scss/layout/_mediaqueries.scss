@@ -121,6 +121,127 @@
         @include text-style($paragraph-font,justify,white);
     }   
     //End of TikTok page
+    //SixDegreex page
+    .sec1SD{
+        margin: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        '. areaT areaT areaT ..'
+        'areaT2 areaT2 areaP areaP areaP'
+        'areaImg areaImg areaP areaP areaP'
+        'areaImg areaImg areaP areaP areaP'
+        'areaCN areaCN areaP areaP areaP';
+        .h1SD{
+            padding: 0px;
+        }
+        .h2SD{
+            @include width-height(300px,300px);
+        }
+        .h3SD{
+            grid-area: areaCN;
+        }
+        .h4SD{
+            grid-area: areaT2;
+            padding: 20px;
+        }
+        .h5SD{
+            grid-area: areaP;
+            padding: 15px;
+            background-color: $sdPage-paragraphsBackgroundColor;  
+        }
+    }
+    .sec2SD{
+        margin: 20px;
+        @include display-flex(column,center,center,wrap,5px);
+        .sec2Img1{
+            @include width-height(500px,350px);
+        }
+
+        .sec2Img2{
+            @include width-height(500px,400px);
+        }
+
+        .sec2Img3{
+            @include width-height(auto, 350px)
+        }
+    }
+    /* Title, Subtitle and paragraphs fonts*/
+    .h1SD{
+        font-size: 40px;
+    }
+    .h3SD, .h4SD, .sec3__Div1SD h2{
+        font-size: 30px;
+    } 
+    .h5SD,.sec3__Div1SD p{
+        font-size: x-large;
+    }
+    //border styles
+    .h1SD, .h3SD,.h2SD{
+        @include border-style(50px,inset ridge,$sdPage-borderColor,10px);
+    }
+    .h5SD,.sec3__Div1SD p{
+        @include border-style(25px, inset outset, white, 5px);
+    }
+    .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe{
+        @include border-style(100px, inset outset, $sdPage-borderColor,10px);
+        object-fit: cover;
+    }
+    //End of SixDegrees page
+    //Facebook Page
+    .sec1FB{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 75px 250px 300px 100px;
+        grid-template-areas: 
+        '.. title title title title title ..'
+        'subtitle subtitle subtitle .. .. .. ..'
+        'paragraph paragraph paragraph paragraph paragraph paragraph paragraph'
+        '.. img1 img2 img3 img4 img5 ..'
+        '.. img1 img2 img3 img4 img5 ..'
+        ;
+        .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+            @include width-height(150px,200px);
+        }
+    
+    }
+    .sec3FB{
+    
+        .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+            @include width-height(270px,250px);
+        }
+        .sec3H4FB iframe{
+            @include width-height(600px,400px);
+        }
+    }
+    
+    /* General borders */
+    .sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+        @include border-style(50px, inset double,$fbPage-borderColor , 10px);
+    }
+    /* General titles font and styles */
+    //title
+    .h1FB{
+        font-size: 40px;
+        @include text-style($title-font,center,white);
+    }
+    //subtitles
+    .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 25px;
+    }
+    .h2FB, .sec2Div1FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 30px;
+        text-decoration: underline solid;
+    }
+    //paragraphs
+    .sec2Div1FB p, .h3FB p{
+        @include text-style($paragraph-font,justify,white);
+        font-weight: 2px solid;
+        font-size: 30px;
+    }
+    //End of Facebook Page
 }
 
 
@@ -228,6 +349,77 @@
         @include text-style($paragraph-font,justify,white);
     }   
     //End of TikTok page
+    //SixDegreex page
+    .sec1SD{
+        margin: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'areaT areaT areaT areaT areaT'
+        'areaT2 areaT2 areaT2 .. ..'
+        'areaImg areaImg areaImg areaCN areaCN'
+        'areaP areaP areaP areaP areaP'
+        'areaP areaP areaP areaP areaP';
+
+        .h1SD{
+            padding: 0px;
+        }
+        .h2SD{
+            @include width-height(300px,300px);
+        }
+        .h4SD{
+            padding: 20px;
+        }
+        .h5SD{
+            padding: 15px;
+            background-color: $sdPage-paragraphsBackgroundColor;  
+        }
+    }
+    .sec3SD{
+        .sec3__Div2SD{
+            margin: 10px;
+            iframe{
+                @include width-height(600px,400px);
+            }
+        }
+    }
+    //End of SixDegrees page
+    //Facebook Page
+    .sec1FB{
+        margin: 0px;
+        @include display-flex(row,center,center,wrap,10px);
+        .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+            @include width-height(300px,400px);
+        }
+    
+    }
+    .sec3FB{
+        margin: 0px;
+        gap: 5px;
+        .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+            @include width-height(225px,200px);
+        }
+        .sec3H4FB iframe{
+            @include width-height(500px,400px);
+        }
+    }
+    /* General titles font and styles */
+    //title
+    .h1FB{
+        font-size: 35px;
+    }
+    //subtitles
+    .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+        font-size: 25px;
+    }
+    .h2FB, .sec2Div1FB h2{
+        font-size: 25px;
+    }
+    //paragraphs
+    .sec2Div1FB p, .h3FB p{
+        font-size: 25px;
+    }
+    //End of Facebook Page
 }
 
 
@@ -331,6 +523,95 @@
         }
     }
     //End of TikTok page
+    //SixDegreex page
+    .sec1SD{
+        grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr 1fr 0.75fr;
+        grid-template-areas: 
+        'areaT areaT areaT areaT areaT'
+        'areaT2 areaT2 areaT2 areaT2 areaT2'
+        '.. areaImg areaImg areaImg ..'
+        '.. areaCN areaCN areaCN ..'
+        'areaP areaP areaP areaP areaP'
+        'areaP areaP areaP areaP areaP';
+        .h2SD{
+            @include width-height(300px,300px);
+        }
+    }
+    .sec2SD{
+        .sec2Img1{
+            @include width-height(400px,auto);
+        }
+
+        .sec2Img2{
+            @include width-height(400px,auto);
+        }
+
+        .sec2Img3{
+            @include width-height(400px, auto)
+        }
+    }
+    .sec3SD{
+        .sec3__Div2SD{
+            iframe{
+                @include width-height(400px,300px);
+            }
+        }
+    }
+    /* Title, Subtitle and paragraphs fonts*/
+    .h1SD{
+        font-size: 40px;
+    }
+    .h3SD, .h4SD, .sec3__Div1SD h2{
+        font-size: 25px;
+    } 
+    .h5SD,.sec3__Div1SD p{
+        font-size: large;
+    }
+    //End of SixDegrees page
+    //Facebook Page
+    .sec1FB{
+        margin: 0px;
+        @include display-flex(row,center,center,wrap,10px);
+        .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+            @include width-height(200px,300px);
+        }
+    
+    }
+    .sec3FB{
+        @include display-flex(column, center,center, wrap, 15px);
+        .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+            @include width-height(auto,200px);
+        }
+        .sec3H4FB iframe{
+            @include width-height(500px,400px);
+        }
+    }
+    
+    /* General borders */
+    .sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+        @include border-style(0px, inset double,$fbPage-borderColor , 10px);
+    }
+    /* General titles font and styles */
+    //title
+    .h1FB{
+        font-size: 35px;
+        @include text-style($title-font,center,white);
+    }
+    //subtitles
+    .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 25px;
+    }
+    .h2FB, .sec2Div1FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 25px;
+        text-decoration: underline solid;
+    }
+    //paragraphs
+    .sec2Div1FB p, .h3FB p{
+        font-size: 20px;
+    }
+    //End of Facebook Page
 }
 
 
@@ -502,4 +783,117 @@
         font-size: 15px;
     }   
     //End of TikTok page
+    //SixDegreex page
+    .sec1SD{
+        margin: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.20fr 1fr 0.25fr 1fr 1fr;
+        grid-template-areas: 
+        'areaT areaT areaT areaT areaT'
+        'areaT2 areaT2 areaT2 areaT2 areaT2'
+        '.. areaImg areaImg areaImg ..'
+        'areaCN areaCN areaCN areaCN areaCN'
+        'areaP areaP areaP areaP areaP'
+        'areaP areaP areaP areaP areaP';
+
+        .h1SD{
+            padding: 0px;
+        }
+        .h2SD{
+            @include width-height(150px,250px);
+        }
+        .h4SD{
+            padding: 0px;
+        }
+        .h5SD{
+            padding: 0px;
+        }
+    }
+    .sec2SD{
+        margin: 15px 0px;
+        .sec2Img1{
+            @include width-height(200px,auto);
+        }
+
+        .sec2Img2{
+            @include width-height(200px,auto);
+        }
+
+        .sec2Img3{
+            @include width-height(200px, auto)
+        }
+    }
+    .sec3SD{
+        margin: 0px;
+        .sec3__Div2SD{
+            margin: 10px;
+            iframe{
+                @include width-height(200px,150px);
+            }
+        }
+    }
+    /* Title, Subtitle and paragraphs fonts*/
+    .h1SD{
+        font-size: 20px;
+    }
+    .h3SD, .h4SD, .sec3__Div1SD h2{
+        font-size: 15px;
+    } 
+    .h5SD,.sec3__Div1SD p{
+        font-size: small;
+    }
+    //border styles
+    .h1SD, .h3SD,.h2SD{
+        @include border-style(50px,inset ridge,$sdPage-borderColor,10px);
+    }
+    .h5SD,.sec3__Div1SD p{
+        @include border-style(10px, inset outset, white, 3px);
+    }
+    .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe{
+        @include border-style(50px, inset outset, $sdPage-borderColor,5px);
+    }
+    //End of SixDegrees page
+    //Facebook Page
+    .sec1FB{
+        margin: 0px;
+        @include display-flex(row,center,center,wrap,10px);
+        .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+            @include width-height(150px,200px);
+        }
+    
+    }
+    .sec3FB{
+        @include display-flex(column, center,center, wrap, 15px);
+        .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+            @include width-height(200px,175px);
+        }
+        .sec3H4FB iframe{
+            @include width-height(200px,150px);
+        }
+    }
+    
+    /* General borders */
+    .sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+        @include border-style(50px, inset double,$fbPage-borderColor , 10px);
+    }
+    /* General titles font and styles */
+    //title
+    .h1FB{
+        font-size: 25px;
+        @include text-style($title-font,center,white);
+    }
+    //subtitles
+    .h4FB h2, .h5FB h2, .h6FB h2, .h7FB h2, .h8FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 20px;
+    }
+    .h2FB, .sec2Div1FB h2{
+        @include text-style($title-font,center,white);
+        font-size: 20px;
+        text-decoration: underline solid;
+    }
+    //paragraphs
+    .sec2Div1FB p, .h3FB p{
+        font-size: 15px;
+    }
 }

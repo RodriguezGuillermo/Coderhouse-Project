@@ -34,7 +34,7 @@
     .h1FB{
         grid-area: title;
         align-content: center;
-        background-color: #7d8bf7;
+        background-color: $fbPage-titleBackgroundColor;
         padding: 10px;
     }
     .h2FB{
@@ -96,7 +96,7 @@
 /* General borders */
 .sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
     object-fit: cover;
-    @include border-style(50px, inset double, #3234b8, 20px);
+    @include border-style(50px, inset double,$fbPage-borderColor , 20px);
 }
 /* General titles font and styles */
 //title

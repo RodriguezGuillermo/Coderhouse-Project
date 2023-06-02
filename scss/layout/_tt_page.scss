@@ -58,7 +58,7 @@
     }
 }
 .sec1TT__Div1 h1, .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv1 img,.sec2TT__Div1 img, .sec2TT__Div3 iframe{
-    @include border-style(75px,inset double,rgb(248, 242, 242),10px);
+    @include border-style(75px,inset double,$ttPage-borderColor,10px);
     object-fit: cover;
 }
 /* font styles */

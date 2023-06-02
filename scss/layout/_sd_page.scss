@@ -3,7 +3,6 @@
     background-size: cover;
     padding: 0px 30px;
 }
-/* start of section 1 main body SDpage */
 .sec1SD{
     padding: 20px;
     gap: 5px;
@@ -27,7 +26,7 @@
     .h1SD{
         grid-area: areaT;
         padding: 0px 20px;
-        background-color: #0a97c6;
+        background-color: $sdPage-titleBackgroundColor;
     }
     .h2SD{
         grid-area: areaImg;
@@ -43,7 +42,7 @@
     .h5SD{
         grid-area: areaP;
         padding: 15px;
-        background-color: #0a97c6;  
+        background-color: $sdPage-paragraphsBackgroundColor;  
     }
 }
 .sec2SD{
@@ -83,7 +82,7 @@
     .sec3__Div1SD{
         @include display-flex(column,center,center,wrap,10px);
         p{
-            background-color: #0a97c6; 
+            background-color: $sdPage-paragraphsBackgroundColor; 
             padding:  15px;
         }
     }
@@ -114,13 +113,13 @@
 }
 //border styles
 .h1SD, .h3SD,.h2SD{
-    @include border-style(50px,inset ridge,#05aee7,10px);
+    @include border-style(50px,inset ridge,$sdPage-borderColor,10px);
 }
 .h5SD,.sec3__Div1SD p{
     @include border-style(25px, inset outset, white, 5px);
 }
 .h2SD, .sec2Img1, .sec2Img2, .sec2Img3, .sec3__Div2SD iframe{
-    @include border-style(100px, inset outset, #0a97c6,10px);
+    @include border-style(100px, inset outset, $sdPage-borderColor,10px);
     object-fit: cover;
 }
 

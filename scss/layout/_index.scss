@@ -26,7 +26,7 @@
     .h1Index{
         grid-area: h1Index;
         text-align: center;
-        background-color: #820bd7;
+        background-color: $index-titleBackgroundColor;
         border-style: groove;
     }
 
@@ -87,7 +87,7 @@
 /* images and texts border style */
 .h1Index,.h3Index, .sec2Index img , .sec3Index img{
     object-fit: cover;
-    @include border-style(100px,inset outset, #9107f4,15px);
+    @include border-style(100px,inset outset,$index-borderColor,15px);
 }
 
 .footerDiv a{ border-color: rgb(228, 3, 232);}

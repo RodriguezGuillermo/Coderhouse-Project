@@ -72,9 +72,9 @@
     }
     .sec3YT__Div3{
         display: inline;
-        div{
-            text-align: center;
-        }
+        h2{
+            text-align: center; 
+        }    
         iframe{
             @include width-height(900px, 400px);
         }
@@ -83,7 +83,7 @@
 /* borders style */
 .h1YT,.h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe{
     object-fit: cover;
-    @include border-style(75px,groove double,#f4f1f1,20px);
+    @include border-style(75px,groove double,$ytPage-borderColor,20px);
 }
 /* fonts style and sizes */
 .h1YT{
@@ -100,7 +100,7 @@
     font-size: xx-large;
 }
 .sec3YT__Div2 h3{
-    @include border-style(25px,groove,white,3px);
+    @include border-style(25px,groove,$ytPage-borderColor,3px);
 }
 /* subtitle decorations */
 .h3YT h2, .sec3YT__Div1 h2, .sec3YT__Div3 h2,.h3YT{
