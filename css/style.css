@@ -464,7 +464,7 @@
 .sec1SD .h5SD {
   grid-area: areaP;
   padding: 15px;
-  background-color: #0a97c6;
+  background-color: #08799f;
 }
 
 .sec2SD {
@@ -520,7 +520,7 @@
   gap: 10px;
 }
 .sec3SD .sec3__Div1SD p {
-  background-color: #0a97c6;
+  background-color: #08799f;
   padding: 15px;
 }
 .sec3SD .sec3__Div2SD {
@@ -869,15 +869,15 @@
   }
   .sec1Index {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 100px 300px 1fr;
+    grid-template-rows: 150px 50px 400px 1fr;
     grid-template-areas: "h1Index h1Index h1Index h1Index" "..  h2Index  h2Index .." ".. h3Index h3Index .." "h4Index h4Index h4Index h4Index";
   }
   .sec1Index .h2Index {
     justify-content: center;
   }
   .sec1Index .h3Index {
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
   }
   .sec2Index {
     display: flex;
@@ -1003,7 +1003,7 @@
   .sec1SD .h5SD {
     grid-area: areaP;
     padding: 15px;
-    background-color: #0a97c6;
+    background-color: #08799f;
   }
   .sec2SD {
     margin: 20px;
@@ -1109,6 +1109,10 @@
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .sec1Index .h3Index {
+    width: 600px;
+    height: 300px;
+  }
   .sec3Index img {
     width: 600px;
     height: auto;
@@ -1230,7 +1234,7 @@
   }
   .sec1SD .h5SD {
     padding: 15px;
-    background-color: #0a97c6;
+    background-color: #08799f;
   }
   .sec3SD .sec3__Div2SD {
     margin: 10px;
@@ -1591,6 +1595,7 @@
   }
   .sec1SD .h1SD {
     padding: 0px;
+    background-color: #086584;
   }
   .sec1SD .h2SD {
     width: 150px;

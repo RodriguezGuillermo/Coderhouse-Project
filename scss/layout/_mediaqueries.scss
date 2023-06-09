@@ -8,7 +8,7 @@
     //Index page
     .sec1Index {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 150px 100px 300px 1fr;
+        grid-template-rows: 150px 50px 400px 1fr;
         grid-template-areas: 
         'h1Index h1Index h1Index h1Index'
         '..  h2Index  h2Index ..'
@@ -19,7 +19,7 @@
             justify-content: center;
         }
         .h3Index{
-            @include width-height(500px,300px);
+            @include width-height(700px,400px);
         }
     }
     .sec2Index{
@@ -247,6 +247,12 @@
 
 @media only screen and (max-width: 991.98px){
     //Index page
+    .sec1Index{
+        .h3Index{
+        @include width-height(600px,300px);
+    }
+    }
+    
     .sec3Index{
         img{@include width-height(600px,auto);}
     }
@@ -798,6 +804,7 @@
 
         .h1SD{
             padding: 0px;
+            background-color: #086584;
         }
         .h2SD{
             @include width-height(150px,250px);
