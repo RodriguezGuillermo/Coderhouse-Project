@@ -6,9 +6,8 @@
     
     .h3Footer{ 
         text-decoration: underline;
-        font-family: 'Poltawski Nowy',serif;
+        @include text-style($title-font,center,white);
         font-size: x-large;
-        color: white;
     }
     
     //como cambiar el color del borderr del svg segun cada pagina
@@ -19,15 +18,12 @@
     
         svg{
             color: white;
-            width: 30px;
-            height: 30px;
+            @include width-height(30px,30px);
             
         }
         a{
+            @include border-style(100px,inset groove,white,5px);
             padding: 5px 10px;
-            border-radius: 100px;
-            border-width: 5px;
-            border-style: inset groove;
             margin: 10px;
         }
     }

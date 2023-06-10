@@ -2,12 +2,9 @@
     @include display-flex(row, space-between, center,wrap, 0);
     
     img{
-        border-radius: 100%;
-        border: 5px solid; 
         object-fit: cover;
-        width: 150px;
-        height: 150px;
-        border-color: white;
+        @include width-height(150px,150px);
+        @include border-style(100%,inset,white,5px solid);
     }
     .botoneraHeader {
         display: flex;
@@ -18,9 +15,8 @@
 
         a{
             text-decoration: none;
-            font-family: 'Poltawski Nowy', serif;
             font-size: medium;
-            color: white;
+            @include text-style($title-font,center,white);
         }
 
         .btn{
@@ -30,11 +26,8 @@
             text-decoration: none;
             letter-spacing: 5px;
             transform: all 0.8s ease;
-            border-radius: 100px;
-            border: 3px solid;
-            border-color: white;
             transition: all 0.8s;
-
+            @include border-style(100px,inset,white,5px);
             &:hover{
                 background-color: rgb(0, 0, 0);
                 border-color: grey;
@@ -47,8 +40,7 @@
         //Boton 1
         .btn-1 span:nth-child(n){
             position: absolute;
-            width: 10px;
-            height: 10px;
+            @include width-height(10px,10px);
             border: 3px solid;
             transition: all 0.6s ease;
         }
@@ -79,8 +71,7 @@
         //Boton 2 ASIMILAR AL BOTON 1
         .btn-2 span:nth-child(n){
             position: absolute;
-            width: 10px;
-            height: 10px;
+            @include width-height(10px,10px);
             border: 3px solid;
             transition: all 0.6s ease;
         }
