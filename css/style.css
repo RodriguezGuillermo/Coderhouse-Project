@@ -1290,16 +1290,16 @@
 @media only screen and (max-width: 767.98px) {
   .footerDiv .h3Footer {
     font-size: large;
-    margin: 0px;
-  }
-  .footerDiv .h3SubDiv svg {
-    width: 20px;
-    height: 20px;
+    margin: 5px;
   }
   .footerDiv .h3SubDiv a {
     border-width: 0;
     padding: 0px;
     margin: 5px;
+  }
+  .footerDiv .h3SubDiv a svg {
+    width: 30px;
+    height: 30px;
   }
   .sec1Index {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1471,11 +1471,11 @@
     padding: 10px;
   }
   .footerDiv .h3Footer {
-    font-size: x-small;
+    font-size: medium;
   }
-  .footerDiv .h3SubDiv svg {
-    width: 15px;
-    height: 15px;
+  .footerDiv .h3SubDiv a svg {
+    width: 25px;
+    height: 25px;
   }
   .sec1Index {
     margin: 0px;
@@ -1534,8 +1534,8 @@
     height: 200px;
   }
   .sec3YT .sec3YT__Div2 img {
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: auto;
   }
   .sec3YT .sec3YT__Div3 {
     display: inline;
@@ -1544,12 +1544,13 @@
     text-align: center;
   }
   .sec3YT .sec3YT__Div3 iframe {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: auto;
   }
   /* borders style */
   .h1YT, .h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe {
     border-width: 5px;
+    border-radius: 25px;
   }
   /* fonts style and sizes */
   .h1YT {
@@ -1566,12 +1567,12 @@
     height: auto;
   }
   .sec2TT .sec2TT__Div1 img {
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   .sec2TT .sec2TT__Div3 iframe {
-    width: 200px;
-    height: 175px;
+    width: 275px;
+    height: auto;
   }
   .sec1TT__Div1 h1, .sec1TT__Div2__SubDiv1 h2, .sec1TT__Div2__SubDiv1 img, .sec2TT__Div1 img, .sec2TT__Div3 iframe {
     border-radius: 50px;
@@ -1610,13 +1611,13 @@
     padding: 0px;
   }
   .sec1SD .h5SD {
-    padding: 0px;
+    padding: 10px;
   }
   .sec2SD {
     margin: 15px 0px;
   }
   .sec2SD .sec2Img1 {
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   .sec2SD .sec2Img2 {
@@ -1624,7 +1625,7 @@
     height: auto;
   }
   .sec2SD .sec2Img3 {
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   .sec3SD {
@@ -1634,7 +1635,7 @@
     margin: 10px;
   }
   .sec3SD .sec3__Div2SD iframe {
-    width: 200px;
+    width: 250px;
     height: 150px;
   }
   /* Title, Subtitle and paragraphs fonts*/
@@ -1687,12 +1688,12 @@
     gap: 15px;
   }
   .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
-    width: 200px;
-    height: 175px;
+    width: 275px;
+    height: auto;
   }
   .sec3FB .sec3H4FB iframe {
-    width: 200px;
-    height: 150px;
+    width: 275px;
+    height: auto;
   }
   /* General borders */
   .sec3H4FB iframe, .h1FB, .sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img {

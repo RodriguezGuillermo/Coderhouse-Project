@@ -434,16 +434,16 @@
     .footerDiv{
         .h3Footer{
             font-size: large;
-            margin: 0px;
+            margin: 5px;
         }
         .h3SubDiv{
-            svg{
-                @include width-height(20px,20px)
-            }
             a{
                 border-width: 0;
                 padding: 0px;
                 margin: 5px;
+                svg{
+                    @include width-height(30px,30px);
+                }
             }
         }
     }
@@ -641,12 +641,15 @@
     //Footer
     .footerDiv{
         .h3Footer{
-            font-size: x-small;
+            font-size: medium;
         }
         .h3SubDiv{
-            svg{
-                @include width-height(15px,15px)
+            a{
+                svg{
+                    @include width-height(25px,25px);
+                }
             }
+            
         }
     }
     //End of Footer
@@ -722,7 +725,7 @@
     .sec3YT{
         .sec3YT__Div2{
             img{
-                @include width-height(150px,100px);
+                @include width-height(250px,auto);
             }
         }
         .sec3YT__Div3{
@@ -731,13 +734,14 @@
                 text-align: center;
             }
             iframe{
-                @include width-height(200px, 150px);
+                @include width-height(250px, auto);
             }
         }
     }
     /* borders style */
     .h1YT,.h2YT img, .sec2YT img, .sec3YT__Div2 img, .sec3YT__Div3 iframe{
-        border-width: 5px
+        border-width: 5px;
+        border-radius: 25px;
     }
     /* fonts style and sizes */
     .h1YT{
@@ -763,12 +767,12 @@
     .sec2TT{
         .sec2TT__Div1{
             img{
-                @include width-height(200px, auto);  
+                @include width-height(250px, auto);  
             }
         }
         .sec2TT__Div3{
             iframe{
-                @include width-height(200px,175px);
+                @include width-height(275px,auto);
             }
         }
     }
@@ -813,13 +817,13 @@
             padding: 0px;
         }
         .h5SD{
-            padding: 0px;
+            padding: 10px;
         }
     }
     .sec2SD{
         margin: 15px 0px;
         .sec2Img1{
-            @include width-height(200px,auto);
+            @include width-height(250px,auto);
         }
 
         .sec2Img2{
@@ -827,7 +831,7 @@
         }
 
         .sec2Img3{
-            @include width-height(200px, auto)
+            @include width-height(250px, auto)
         }
     }
     .sec3SD{
@@ -835,7 +839,7 @@
         .sec3__Div2SD{
             margin: 10px;
             iframe{
-                @include width-height(200px,150px);
+                @include width-height(250px,150px);
             }
         }
     }
@@ -872,10 +876,10 @@
     .sec3FB{
         @include display-flex(column, center,center, wrap, 15px);
         .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
-            @include width-height(200px,175px);
+            @include width-height(275px,auto);
         }
         .sec3H4FB iframe{
-            @include width-height(200px,150px);
+            @include width-height(275px,auto);
         }
     }
     
