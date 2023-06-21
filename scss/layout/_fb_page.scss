@@ -1,12 +1,8 @@
 .bodyFB{
     background: url("../images/Backgrounds/facebookBackgroundImg.svg");
+    background-attachment:fixed;
     background-size: cover;
     padding: 0px 30px;
-    .h3SubDiv {
-        svg{ 
-            border-color: rgb(114, 124, 250); 
-        }
-    }
 }
 
 
@@ -86,7 +82,7 @@
     .sec3H4FB{grid-area: iframeSec3;}
 
     .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
-        @include width-height(500px,300px);
+        @include width-height(auto,300px);
     }
     .sec3H4FB iframe{
         @include width-height(600px,400px);

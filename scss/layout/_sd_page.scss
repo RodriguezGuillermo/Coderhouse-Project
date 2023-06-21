@@ -1,5 +1,6 @@
 .bodySD{
     background: url("../images/Backgrounds/sixdegreesBackgroundImg.svg");
+    background-attachment:fixed;
     background-size: cover;
     padding: 0px 30px;
 }
@@ -122,5 +123,3 @@
     @include border-style(100px, inset outset, $sdPage-borderColor,10px);
     object-fit: cover;
 }
-
-.footerDiv a{border-color: rgb(3, 152, 232);}

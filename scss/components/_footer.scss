@@ -6,7 +6,7 @@
     
     .h3Footer{ 
         text-decoration: underline;
-        @include text-style($title-font,center,white);
+        @include text-style($title-font,center,rgb(255, 255, 255));
         font-size: x-large;
     }
     
@@ -17,12 +17,12 @@
         align-content: center;
     
         svg{
-            color: white;
+            color: rgb(255, 255, 255);
             @include width-height(30px,30px);
             
         }
         a{
-            @include border-style(100px,inset groove,white,5px);
+            @include border-style(100px,inset groove,rgb(255, 253, 253),5px);
             padding: 5px 10px;
             margin: 10px;
         }

@@ -15,8 +15,8 @@
 
         a{
             text-decoration: none;
-            font-size: medium;
-            @include text-style($title-font,center,white);
+            font-size: large;
+            @include text-style($title-font,center,rgb(255, 255, 255));
         }
 
         .btn{
@@ -31,6 +31,7 @@
             &:hover{
                 background-color: rgb(0, 0, 0);
                 border-color: grey;
+                color: white;
                 a{
                     font-weight: bolder;
                 }

@@ -1,5 +1,6 @@
 .bodyIndex{
-    background : url("../images/Backgrounds/indexBackgroundImg.svg");
+    background : url("../../images/Backgrounds/indexBackgroundImg.jpg");
+    background-attachment:fixed;
     background-size: cover;
     padding: 0px 30px;
 }
@@ -27,7 +28,7 @@
         grid-area: h1Index;
         text-align: center;
         background-color: $index-titleBackgroundColor;
-        border-style: groove;
+        border-style: double;
     }
 
     .h2Index{
@@ -56,7 +57,7 @@
     }
     img{
         margin-left: 10px;
-        @include width-height(300px,400px);
+        @include width-height(auto,300px);
     }
 }
 .sec3Index{
@@ -64,7 +65,7 @@
     margin: 40px;
     text-align: center;
 
-    img{@include width-height(800px,auto);}
+    img{@include width-height(auto,400px);}
 
     h2{
         padding: 10px;
@@ -89,5 +90,3 @@
     object-fit: cover;
     @include border-style(100px,inset outset,$index-borderColor,15px);
 }
-
-.footerDiv a{ border-color: rgb(228, 3, 232);}

@@ -32,10 +32,10 @@
 }
 .headerNavGeneral .botoneraHeader a {
   text-decoration: none;
-  font-size: medium;
+  font-size: large;
   font-family: "Poltawski Nowy", serif;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .headerNavGeneral .botoneraHeader .btn {
   display: inline;
@@ -53,6 +53,7 @@
 .headerNavGeneral .botoneraHeader .btn:hover {
   background-color: rgb(0, 0, 0);
   border-color: grey;
+  color: white;
 }
 .headerNavGeneral .botoneraHeader .btn:hover a {
   font-weight: bolder;
@@ -123,7 +124,7 @@
   text-decoration: underline;
   font-family: "Poltawski Nowy", serif;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: x-large;
 }
 .footerDiv .h3SubDiv {
@@ -132,21 +133,22 @@
   align-content: center;
 }
 .footerDiv .h3SubDiv svg {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
 }
 .footerDiv .h3SubDiv a {
   border-radius: 100px;
   border-style: inset groove;
-  border-color: white;
+  border-color: rgb(255, 253, 253);
   border-width: 5px;
   padding: 5px 10px;
   margin: 10px;
 }
 
 .bodyIndex {
-  background: url("../images/Backgrounds/indexBackgroundImg.svg");
+  background: url("../../images/Backgrounds/indexBackgroundImg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   padding: 0px 30px;
 }
@@ -174,8 +176,8 @@
 .sec1Index .h1Index {
   grid-area: h1Index;
   text-align: center;
-  background-color: #820bd7;
-  border-style: groove;
+  background-color: rgba(112, 128, 138, 0.3921568627);
+  border-style: double;
 }
 .sec1Index .h2Index {
   grid-area: h2Index;
@@ -212,8 +214,8 @@
 }
 .sec2Index img {
   margin-left: 10px;
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: 300px;
 }
 
 .sec3Index {
@@ -227,8 +229,8 @@
   text-align: center;
 }
 .sec3Index img {
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 400px;
 }
 .sec3Index h2 {
   padding: 10px;
@@ -262,21 +264,15 @@
   object-fit: cover;
   border-radius: 100px;
   border-style: inset outset;
-  border-color: #9107f4;
+  border-color: #fefeff;
   border-width: 15px;
-}
-
-.footerDiv a {
-  border-color: rgb(228, 3, 232);
 }
 
 .bodyFB {
   background: url("../images/Backgrounds/facebookBackgroundImg.svg");
+  background-attachment: fixed;
   background-size: cover;
   padding: 0px 30px;
-}
-.bodyFB .h3SubDiv svg {
-  border-color: rgb(114, 124, 250);
 }
 
 /* start of sec1 of main body facebook Page */
@@ -374,7 +370,7 @@
   grid-area: iframeSec3;
 }
 .sec3FB .sec3H1FB img, .sec3FB .sec3H2FB img, .sec3FB .sec3H3FB img {
-  width: 500px;
+  width: auto;
   height: 300px;
 }
 .sec3FB .sec3H4FB iframe {
@@ -424,6 +420,7 @@
 
 .bodySD {
   background: url("../images/Backgrounds/sixdegreesBackgroundImg.svg");
+  background-attachment: fixed;
   background-size: cover;
   padding: 0px 30px;
 }
@@ -585,18 +582,11 @@
   object-fit: cover;
 }
 
-.footerDiv a {
-  border-color: rgb(3, 152, 232);
-}
-
 .bodyTT {
   background: url("../images/Backgrounds/tiktokBackground.svg");
+  background-attachment: fixed;
   background-size: cover;
   padding: 30px;
-}
-
-.footerDiv a {
-  border-color: rgb(255, 255, 255);
 }
 
 /* Start of sec1 of main body TikTok page */
@@ -714,12 +704,9 @@
 
 .bodyYT {
   background: url("../images/Backgrounds/youtubeBackground.svg");
+  background-attachment: fixed;
   background-size: cover;
   padding: 30px;
-}
-
-.footerDiv svg {
-  border-color: rgb(10, 4, 4);
 }
 
 .sec1YT {
