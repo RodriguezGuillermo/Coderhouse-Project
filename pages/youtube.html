@@ -19,26 +19,49 @@
 
     <header>
 
-        <nav class="headerNavGeneral">
+        <nav class="headerNavGeneral navbar navbar-expand-lg">
             <a href="../index.html"><img src="../images/Youtube/youtube_logo.jpg" alt="Youtube Logo" type="image"
                     class="logoWebsite" data-aos="fade-down" data-aos-duration="2000"></a>
-            <div class="botoneraHeader">
-                <a href="../index.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="100" role="button" >Menu
-                    <span></span><span></span>
-                </a>
-                <a href="./sixdegrees.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="200" role="button">SixDegrees
-                    <span></span><span></span>
-                </a>
-                <a href="./facebook.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="300" role="button">Facebook
-                    <span></span><span></span>
-                </a>
-                <a href="./youtube.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="400" role="button">Youtube
-                    <span></span><span></span>
-                </a>
-                <a href="./tiktok.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="500" role="button">TikTok
-                    <span></span><span></span>
-                </a>
-            </div>
+            
+                    <div class="container container-fluid justify-content-end">
+                        <button class="btn navbar-toggler btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar " aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon navbar-dark"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="200">
+                                        <a class="nav-link" href="../index.html">Menu
+                                            <span></span><span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="300">
+                                        <a class="nav-link" href="./sixdegrees.html">SixDegrees
+                                            <span></span><span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="400">
+                                        <a class="nav-link" href="./facebook.html">Facebook
+                                            <span></span><span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="500">
+                                        <a class="nav-link active" aria-current="page" href="./youtube.html">YouTube
+                                            <span></span><span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="600">
+                                        <a class="nav-link"  href="./tiktok.html">TikTok
+                                            <span></span><span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
         </nav>
 
     </header>
@@ -128,7 +151,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vtxH-RoHnGM"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen data-aos="flip-down" data-aos-duration="2000"></iframe>
+                    allowfullscreen ></iframe>
 
             </div>
 

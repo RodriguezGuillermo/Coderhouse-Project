@@ -2,7 +2,7 @@
     background: url("../images/Backgrounds/facebookBackgroundImg.svg");
     background-attachment:fixed;
     background-size: cover;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
 
@@ -13,7 +13,7 @@
     grid-template-rows: 100px 100px 200px 200px 300px;
     grid-template-areas: 
     '.. title title title title title ..'
-    'subtitle subtitle .. .. .. .. ..'
+    'subtitle subtitle subtitle .. .. .. ..'
     'paragraph paragraph paragraph paragraph paragraph paragraph paragraph'
     '.. img1 img2 img3 img4 img5 ..'
     '.. img1 img2 img3 img4 img5 ..'
@@ -35,7 +35,7 @@
     }
     .h2FB{
         grid-area: subtitle;
-        align-items: end;
+        align-items: center;
     }
     .h3FB{
         grid-area: paragraph;
@@ -62,35 +62,29 @@
     }
 }
 .sec3FB{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    'imgSec3 img2Sec3 img3Sec3'
-    'iframeSec3 iframeSec3 iframeSec3'
-    ;
-    justify-items: center;
-    place-items: center;
-    gap: 10px;
-
-    &__Div{
-        @include display-flex(row,center,center,wrap,5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .sec3FBDiv1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
-    .sec3H1FB{grid-area: imgSec3;}
-    .sec3H2FB{grid-area: img2Sec3;}
-    .sec3H3FB{grid-area: img3Sec3;}
-    .sec3H4FB{grid-area: iframeSec3;}
-
-    .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
+    .sec3H1FB, .sec3H2FB, .sec3H3FB{
         @include width-height(auto,300px);
     }
-    .sec3H4FB iframe{
+    .sec3FBDiv2 iframe{
+        justify-content: center;
         @include width-height(600px,400px);
     }
 }
 
 /* General borders */
-.sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+.sec3FBDiv2 iframe,.h1FB,.sec3H1FB , .sec3H2FB , .sec3H3FB , .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
     object-fit: cover;
     @include border-style(50px, inset double,$fbPage-borderColor , 20px);
 }

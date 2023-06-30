@@ -1,8 +1,21 @@
 @media only screen and (max-width: 1199.98px){
     //Nav Bar
     .headerNavGeneral{
-        @include display-flex(column, center, center,wrap, 10px);
+        @include display-flex(row, space-between, center,nowrap, 10px);
         margin-bottom: 30px;
+        .container{
+            .offcanvas{
+                .offcanvas-body{
+                    .navbar-nav{
+                        gap: 5px;
+                        .btn{
+                            padding: 5px 10px;
+                            letter-spacing: 3px;
+                        } 
+                    }
+                }
+            }
+        }
     }
     //End of Nav Bar   
     //Index page
@@ -246,10 +259,48 @@
 
 
 @media only screen and (max-width: 991.98px){
+    //Nav Bar
+    .headerNavGeneral{
+       // @include display-flex(row, space-between, center,nowrap, 10px);
+        //margin-bottom: 30px;
+        .container{
+            .offcanvas{
+                .offcanvas-body{
+                    .navbar-nav{
+                        align-content: center;
+                        gap: 5px;
+                        align-items: start;
+                        .btn{
+                            padding: 5px 10px;
+                            letter-spacing: 3px;
+                            @include border-style(25px,inset double,black,2px);
+                            a{
+                                color: black;
+                                font-size: 25px;
+                            }
+                            &:hover{
+                                background-color: black;
+                                a{
+                                    color: white;
+                                }
+                            }
+                        } 
+                        .btn-1 span:nth-child(n), .btn-2 span:nth-child(n){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //End of Nav Bar  
     //Index page
+    
     .sec1Index{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 50px 400px 1fr;
         .h3Index{
-        @include width-height(600px,300px);
+        @include width-height(auto,375px);
     }
     }
     
@@ -259,9 +310,13 @@
     /* subtitle, Subtitle and paragraphs fonts style*/
     .h1Index{
         font-size: 35px;
+        padding: 0px;
+        margin : 0px;
     }
     .h2Index, .sec2Index h2, .sec3Index h2{
         font-size: 30px;
+        margin: 0px;
+        margin-left: 0px;
     }
     .h4Index p , .sec2Index p, .sec3Index p{
         font-size: x-large;
@@ -429,7 +484,7 @@
 }
 
 
-@media only screen and (max-width: 767.98px){
+@media only screen and (max-width: 767.98px){  
     //Footer
     .footerDiv{
         .h3Footer{
@@ -453,7 +508,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 100px 50px 200px 1fr;
         .h3Index{
-            @include width-height(350px,200px);
+            @include width-height(auto,200px);
+            border-radius: 25px;
         }
     }
     .sec2Index{
@@ -531,7 +587,7 @@
     //End of TikTok page
     //SixDegreex page
     .sec1SD{
-        grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr 1fr 0.75fr;
+        grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr 1fr 0.50fr;
         grid-template-areas: 
         'areaT areaT areaT areaT areaT'
         'areaT2 areaT2 areaT2 areaT2 areaT2'
@@ -627,12 +683,18 @@
         img{
             @include width-height(100px,100px);
         }
-        .botoneraHeader{
-            a{
-                font-size: small;
-            }
-            .btn{
-                padding: 10px;
+        .container{
+            .offcanvas{
+                .offcanvas-body{
+                    .navbar-nav{
+                        .btn{
+                            a{
+                                font-size: medium;
+                            }
+                            
+                        } 
+                    }
+                }
             }
         }
     }
@@ -666,7 +728,7 @@
         'h4Index h4Index h4Index h4Index'
         ;
         .h3Index{
-            @include width-height(175px,120px);
+            @include width-height(175px,auto);
         }
     }
     .sec2Index{
@@ -797,7 +859,7 @@
     .sec1SD{
         margin: 0px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.25fr 0.20fr 1fr 0.25fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.20fr 1fr 0.25fr 1fr 0.5fr;
         grid-template-areas: 
         'areaT areaT areaT areaT areaT'
         'areaT2 areaT2 areaT2 areaT2 areaT2'
@@ -823,7 +885,7 @@
     .sec2SD{
         margin: 15px 0px;
         .sec2Img1{
-            @include width-height(250px,auto);
+            @include width-height(200px,auto);
         }
 
         .sec2Img2{
@@ -831,7 +893,7 @@
         }
 
         .sec2Img3{
-            @include width-height(250px, auto)
+            @include width-height(200px, auto)
         }
     }
     .sec3SD{
@@ -839,7 +901,7 @@
         .sec3__Div2SD{
             margin: 10px;
             iframe{
-                @include width-height(250px,150px);
+                @include width-height(225px,150px);
             }
         }
     }
@@ -871,20 +933,27 @@
         .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
             @include width-height(150px,200px);
         }
-    
+    }
+    .sec2FB{
+        padding: 0px;
+        p{
+            margin: 0px;
+            padding: 0px;
+            letter-spacing: 0px;
+        }
     }
     .sec3FB{
         @include display-flex(column, center,center, wrap, 15px);
-        .sec3H1FB img, .sec3H2FB img, .sec3H3FB img{
-            @include width-height(275px,auto);
+        .sec3FBDiv1 img{
+            @include width-height(250px,auto);
         }
-        .sec3H4FB iframe{
-            @include width-height(275px,auto);
+        .sec3FBDiv2 iframe{
+            @include width-height(250px,auto);
         }
     }
     
     /* General borders */
-    .sec3H4FB iframe,.h1FB,.sec3H1FB img, .sec3H2FB img, .sec3H3FB img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
+    .sec3FBDiv2 iframe,.h1FB,.sec3FBDiv1 img, .h4FB img, .h5FB img, .h6FB img, .h7FB img, .h8FB img{
         @include border-style(50px, inset double,$fbPage-borderColor , 10px);
     }
     /* General titles font and styles */
@@ -905,6 +974,6 @@
     }
     //paragraphs
     .sec2Div1FB p, .h3FB p{
-        font-size: 15px;
+        font-size: 20px;
     }
 }

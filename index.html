@@ -19,26 +19,51 @@
 
 <body class="bodyIndex">
     <header>
-        <nav class="headerNavGeneral">
+        <nav class="headerNavGeneral navbar  navbar-expand-lg  ">
             <a href="index.html"><img src="images/IndexImgs/logo.jpg" alt="Website Logo" type="image"
                     class="logoWebsite" data-aos="fade-down" data-aos-duration="2000"></a>
-            <div class="botoneraHeader">
-                <a href="index.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="100" role="button" >Menu
-                    <span></span><span></span>
-                </a>
-                <a href="pages/sixdegrees.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="200" role="button">SixDegrees
-                    <span></span><span></span>
-                </a>
-                <a href="pages/facebook.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="300" role="button">Facebook
-                    <span></span><span></span>
-                </a>
-                <a href="pages/youtube.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="400" role="button">Youtube
-                    <span></span><span></span>
-                </a>
-                <a href="pages/tiktok.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="500" role="button">TikTok
-                    <span></span><span></span>
-                </a>
+            
+                    
+            <div class="container container-fluid justify-content-end">
+                <button class="btn navbar-toggler btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar " aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="200">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Menu
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="300">
+                                <a class="nav-link" href="pages/sixdegrees.html">SixDegrees
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="400">
+                                <a class="nav-link" href="pages/facebook.html">Facebook
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="500">
+                                <a class="nav-link" href="pages/youtube.html">YouTube
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="600">
+                                <a class="nav-link" href="pages/tiktok.html">TikTok
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            
         </nav>
 
     </header>
@@ -96,7 +121,7 @@
                     as an user wisely.
                 </p>
             </div>
-            <img src="images/IndexImgs/imgIndex3.jpg" alt="Random Image" data-aos="fade-up" data-aos-duration="1500">
+            <img src="images/IndexImgs/imgIndex3.jpg" alt="Random Image" >
 
         </section>
 

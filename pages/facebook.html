@@ -19,25 +19,48 @@
 
     <header>
 
-        <nav class="headerNavGeneral">
+        <nav class="headerNavGeneral navbar navbar-expand-lg">
             <a href="../index.html"><img src="../images/Facebook/facebook_logo.jpg" alt="Facebook Logo" type="image"
                     class="logoWebsite" data-aos="fade-down" data-aos-duration="2000"></a>
-            <div class="botoneraHeader">
-                <a href="../index.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="100" role="button" >Menu
-                    <span></span><span></span>
-                </a>
-                <a href="./sixdegrees.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="200" role="button">SixDegrees
-                    <span></span><span></span>
-                </a>
-                <a href="./facebook.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="300" role="button">Facebook
-                    <span></span><span></span>
-                </a>
-                <a href="./youtube.html" class="btn btn-2" data-aos="fade-down" data-aos-delay="400" role="button">Youtube
-                    <span></span><span></span>
-                </a>
-                <a href="./tiktok.html" class="btn btn-1" data-aos="fade-down" data-aos-delay="500" role="button">TikTok
-                    <span></span><span></span>
-                </a>
+            
+            <div class="container container-fluid justify-content-end">
+                <button class="btn navbar-toggler btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar " aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="200">
+                                <a class="nav-link" href="../index.html">Menu
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="300">
+                                <a class="nav-link" href="./sixdegrees.html">SixDegrees
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="400">
+                                <a class="nav-link active" aria-current="page" href="./facebook.html">Facebook
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-2" role="button" data-aos="fade-down" data-aos-delay="500">
+                                <a class="nav-link" href="./youtube.html">YouTube
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-1" role="button" data-aos="fade-down" data-aos-delay="600">
+                                <a class="nav-link" href="./tiktok.html">TikTok
+                                    <span></span><span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -117,16 +140,17 @@
         </section>
 
         <section class="sec3FB">
-            <div class="sec3FB__Div sec3H1FB"><img src="../images/Facebook/fbImg.jpg" alt="Facebook menu page" data-aos="flip-up" data-aos-duration="1500"></div>
-            <div class="sec3FB__Div sec3H2FB"><img src="../images/Facebook/fbImg2.jpg"
-                    alt="Facebok different logo types throught the years" data-aos="flip-up" data-aos-duration="2000"></div>
-            <div class="sec3FB__Div sec3H3FB"><img src="../images/Facebook/fbImg3.jpg" alt="Facebook updated menu page" data-aos="flip-up"data-aos-duration="2500">
+            <div class="sec3FBDiv1">
+                <img src="../images/Facebook/fbImg.jpg" alt="Facebook menu page" class="sec3H1FB" data-aos="flip-up" data-aos-duration="1500">
+                <img src="../images/Facebook/fbImg2.jpg"
+                    alt="Facebok different logo types throught the years" class="sec3H2FB" data-aos="flip-up" data-aos-duration="2000">
+                <img src="../images/Facebook/fbImg3.jpg" alt="Facebook updated menu page" class="sec3H3FB" data-aos="flip-up"data-aos-duration="2500">
+
             </div>
-            <div class="sec3FB__Div sec3H4FB">
+            <div class="sec3FBDiv2">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JBxBqM5zQgg"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen data-aos="fade-up"data-aos-anchor-placement="top-bottom" data-aos-duration="2000"></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </div>
 
         </section>

@@ -2,7 +2,7 @@
     background: url("../images/Backgrounds/sixdegreesBackgroundImg.svg");
     background-attachment:fixed;
     background-size: cover;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 .sec1SD{
     padding: 20px;
@@ -47,34 +47,26 @@
     }
 }
 .sec2SD{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,400px);
-    grid-template-areas: 
-    'sec2Img1 sec2Img2 sec2Img3'
-    ;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: 10px;
-
+    
     &__Grid{
         @include width-height(100%,100%);
         @include display-flex(row,center,center,wrap,5px);
     }
 
     .sec2Img1{
-        grid-area: sec2Img1;
-        @include width-height(400px,350px);
+        @include width-height(450px,auto);
     }
 
     .sec2Img2{
-        grid-area: sec2Img2;
-        @include width-height(400px,400px);
+        @include width-height(350px,auto);
     }
 
     .sec2Img3{
-        grid-area: sec2Img3;
-        @include width-height(auto, 350px)
+        @include width-height(450px, auto)
     }
 }
 .sec3SD{

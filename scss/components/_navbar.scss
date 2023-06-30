@@ -1,100 +1,106 @@
 .headerNavGeneral{
-    @include display-flex(row, space-between, center,wrap, 0);
-    
+    @include display-flex(row, space-between, center,nowrap, 0);
     img{
         object-fit: cover;
         @include width-height(150px,150px);
         @include border-style(100%,inset,white,5px solid);
     }
-    .botoneraHeader {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
 
-        a{
-            text-decoration: none;
-            font-size: large;
-            @include text-style($title-font,center,rgb(255, 255, 255));
-        }
-
+    .container{
         .btn{
-            display: inline;
-            position: relative;
-            padding: 20px 30px;
-            text-decoration: none;
-            letter-spacing: 5px;
-            transform: all 0.8s ease;
-            transition: all 0.8s;
-            @include border-style(100px,inset,white,5px);
-            &:hover{
-                background-color: rgb(0, 0, 0);
-                border-color: grey;
-                color: white;
-                a{
-                    font-weight: bolder;
+            .navbar-toggler-icon{
+                padding: 20px !important;
+            }
+            
+        }
+        .offcanvas{
+            .offcanvas-body{
+                .navbar-nav{
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    .btn{
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        letter-spacing: 5px;
+                        transform: all 0.5s ease;
+                        transition: all 0.5s ease;
+                        @include border-style(100px,inset,white,5px);
+                        a{
+                            font-family: $title-font;
+                            text-decoration: none;
+                            font-size: large;
+                            @include text-style($title-font,center,rgb(255, 255, 255));
+                        }
+                        &:hover{
+                            background-color: black;
+                            border-color: grey;
+                            a{font-weight: bolder;}
+                        }
+                                
+                    }
+                        .btn-1 span:nth-child(n){
+                        position: absolute;
+                        @include width-height(10px,10px);
+                        border: 3px solid;
+                        transition: all 0.6s ease;
+                        }
+                        .btn-1 span:nth-child(1){
+                            right: 10px;
+                            top: -10%;
+                            background-color: #ffffff;
+                        }
+                        .btn-1:hover span:nth-child(1){
+                            top: 100%;
+                            transform: rotate(90deg);
+                            color: var(--color);
+                            background-color: rgb(146, 145, 145);
+                        }
+                        .btn-1 span:nth-child(2){
+                            left: 10px;
+                            bottom: -10%;
+                            background-color: rgb(146, 145, 145);  
+                        }
+                        .btn-1:hover span:nth-child(2){
+                                bottom: 100%;
+                                transform: rotate(90deg);
+                                color: var(--color);
+                                background-color: white;
+                        }
+                        .btn-2 span:nth-child(n){
+                            position: absolute;
+                            @include width-height(10px,10px);
+                            border: 3px solid;
+                            transition: all 0.6s ease;
+                        }
+                        .btn-2 span:nth-child(1){
+                            right: 10%;
+                            top: -10px;
+                            background-color: #fff;
+                        }
+                        .btn-2 span:nth-child(2){
+                            left: 10%;
+                            bottom: -10px;
+                        }
+                        .btn-2:hover span:nth-child(1){
+                            right: 80%;
+                            transform: rotate(90deg);
+                            color: var(--color);
+                            background-color: var(--color);
+                        }
+                        .btn-2:hover span:nth-child(2){
+                            left: 80%;
+                            transform: rotate(90deg);
+                            color: var(--color);
+                        }
                 }
             }
-        }
-        
-        //Boton 1
-        .btn-1 span:nth-child(n){
-            position: absolute;
-            @include width-height(10px,10px);
-            border: 3px solid;
-            transition: all 0.6s ease;
-        }
-        .btn-1 span:nth-child(1){
-            right: 10px;
-            top: -10%;
-            background-color: #ffffff;
-        }
-        .btn-1:hover span:nth-child(1){
-            top: 100%;
-            transform: rotate(90deg);
-            color: var(--color);
-            background-color: rgb(146, 145, 145);
-        }
-        .btn-1 span:nth-child(2){
-            left: 10px;
-            bottom: -10%;
-            background-color: rgb(146, 145, 145);  
-        }
-        .btn-1:hover span:nth-child(2){
-                bottom: 100%;
-                transform: rotate(90deg);
-                color: var(--color);
-                background-color: white;
-        }
-        
 
-        //Boton 2 ASIMILAR AL BOTON 1
-        .btn-2 span:nth-child(n){
-            position: absolute;
-            @include width-height(10px,10px);
-            border: 3px solid;
-            transition: all 0.6s ease;
         }
-        .btn-2 span:nth-child(1){
-            right: 10%;
-            top: -10px;
-            background-color: #fff;
-        }
-        .btn-2 span:nth-child(2){
-            left: 10%;
-            bottom: -10px;
-        }
-        .btn-2:hover span:nth-child(1){
-            right: 80%;
-            transform: rotate(90deg);
-            color: var(--color);
-            background-color: var(--color);
-        }
-        .btn-2:hover span:nth-child(2){
-            left: 80%;
-            transform: rotate(90deg);
-            color: var(--color);
-        }
+        
     }
+    
+        
 }
